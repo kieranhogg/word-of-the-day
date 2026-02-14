@@ -1,0 +1,736 @@
+{
+    "words": [
+        {
+            "word": "giggle",
+            "definition": "a happy laugh sound"
+        },
+        {
+            "word": "wiggle",
+            "definition": "to move back and forth"
+        },
+        {
+            "word": "bubble",
+            "definition": "a round ball of air in water or soap"
+        },
+        {
+            "word": "puddle",
+            "definition": "a small pool of water on the ground"
+        },
+        {
+            "word": "twinkle",
+            "definition": "to shine with a flickering light"
+        },
+        {
+            "word": "fuzzy",
+            "definition": "soft and fluffy to touch"
+        },
+        {
+            "word": "sparkle",
+            "definition": "to shine with tiny flashes of light"
+        },
+        {
+            "word": "bounce",
+            "definition": "to jump up and down"
+        },
+        {
+            "word": "tumble",
+            "definition": "to roll or fall over"
+        },
+        {
+            "word": "rainbow",
+            "definition": "colorful arc in the sky after rain"
+        },
+        {
+            "word": "thunder",
+            "definition": "loud rumbling sound in the sky"
+        },
+        {
+            "word": "whisper",
+            "definition": "to talk very quietly"
+        },
+        {
+            "word": "tickle",
+            "definition": "to touch someone and make them laugh"
+        },
+        {
+            "word": "splash",
+            "definition": "to make water fly up"
+        },
+        {
+            "word": "snuggle",
+            "definition": "to cuddle close and cozy"
+        },
+        {
+            "word": "butterfly",
+            "definition": "colorful insect with big wings"
+        },
+        {
+            "word": "dinosaur",
+            "definition": "giant animal that lived long ago"
+        },
+        {
+            "word": "penguin",
+            "definition": "black and white bird that can't fly"
+        },
+        {
+            "word": "elephant",
+            "definition": "huge gray animal with a long trunk"
+        },
+        {
+            "word": "giraffe",
+            "definition": "tall animal with a very long neck"
+        },
+        {
+            "word": "octopus",
+            "definition": "sea animal with eight arms"
+        },
+        {
+            "word": "moonlight",
+            "definition": "soft light from the moon at night"
+        },
+        {
+            "word": "sunshine",
+            "definition": "bright light from the sun"
+        },
+        {
+            "word": "snowflake",
+            "definition": "tiny piece of snow with a pretty shape"
+        },
+        {
+            "word": "pinwheel",
+            "definition": "toy that spins in the wind"
+        },
+        {
+            "word": "telescope",
+            "definition": "tool to look at stars far away"
+        },
+        {
+            "word": "magnify",
+            "definition": "to make something look bigger"
+        },
+        {
+            "word": "mirror",
+            "definition": "glass that shows your reflection"
+        },
+        {
+            "word": "shadow",
+            "definition": "dark shape made when blocking light"
+        },
+        {
+            "word": "echo",
+            "definition": "sound that bounces back to you"
+        },
+        {
+            "word": "breeze",
+            "definition": "gentle wind"
+        },
+        {
+            "word": "treasure",
+            "definition": "something very special and valuable"
+        },
+        {
+            "word": "castle",
+            "definition": "big stone building where kings live"
+        },
+        {
+            "word": "adventure",
+            "definition": "exciting trip or journey"
+        },
+        {
+            "word": "magic",
+            "definition": "special power to do impossible things"
+        },
+        {
+            "word": "dragon",
+            "definition": "pretend animal that breathes fire"
+        },
+        {
+            "word": "mermaid",
+            "definition": "pretend person with a fish tail"
+        },
+        {
+            "word": "unicorn",
+            "definition": "pretend horse with one horn"
+        },
+        {
+            "word": "rocket",
+            "definition": "ship that flies to space"
+        },
+        {
+            "word": "astronaut",
+            "definition": "person who travels to space"
+        },
+        {
+            "word": "robot",
+            "definition": "machine that can move and do things"
+        },
+        {
+            "word": "gigantic",
+            "definition": "very very big"
+        },
+        {
+            "word": "tiny",
+            "definition": "very very small"
+        },
+        {
+            "word": "squish",
+            "definition": "to squeeze something soft"
+        },
+        {
+            "word": "crunch",
+            "definition": "sound of biting something crispy"
+        },
+        {
+            "word": "zigzag",
+            "definition": "line that goes back and forth sharply"
+        },
+        {
+            "word": "twirl",
+            "definition": "to spin around in circles"
+        },
+        {
+            "word": "stomp",
+            "definition": "to step down hard and loud"
+        },
+        {
+            "word": "tiptoe",
+            "definition": "to walk quietly on your toes"
+        },
+        {
+            "word": "parade",
+            "definition": "line of people marching and celebrating"
+        },
+        {
+            "word": "festival",
+            "definition": "big happy celebration with lots of people"
+        },
+        {
+            "word": "picnic",
+            "definition": "meal eaten outside on a blanket"
+        },
+        {
+            "word": "voyage",
+            "definition": "long trip on a boat or ship"
+        },
+        {
+            "word": "mountain",
+            "definition": "very tall hill that touches the clouds"
+        },
+        {
+            "word": "volcano",
+            "definition": "mountain that shoots out hot lava"
+        },
+        {
+            "word": "waterfall",
+            "definition": "water falling down from high rocks"
+        },
+        {
+            "word": "island",
+            "definition": "land with water all around it"
+        },
+        {
+            "word": "jungle",
+            "definition": "forest with lots of trees and animals"
+        },
+        {
+            "word": "desert",
+            "definition": "hot sandy place with little water"
+        },
+        {
+            "word": "meadow",
+            "definition": "field covered with grass and flowers"
+        },
+        {
+            "word": "blossom",
+            "definition": "flower opening up on a tree"
+        },
+        {
+            "word": "sprout",
+            "definition": "baby plant just starting to grow"
+        },
+        {
+            "word": "garden",
+            "definition": "place where flowers and plants grow"
+        },
+        {
+            "word": "orchard",
+            "definition": "place with many fruit trees"
+        },
+        {
+            "word": "harvest",
+            "definition": "picking fruits and vegetables when ready"
+        },
+        {
+            "word": "cozy",
+            "definition": "warm, comfortable, and nice"
+        },
+        {
+            "word": "enormous",
+            "definition": "really really huge"
+        },
+        {
+            "word": "delicious",
+            "definition": "tastes really really good"
+        },
+        {
+            "word": "scrumptious",
+            "definition": "super yummy and tasty"
+        },
+        {
+            "word": "marvelous",
+            "definition": "wonderful and amazing"
+        },
+        {
+            "word": "magnificent",
+            "definition": "very beautiful and impressive"
+        },
+        {
+            "word": "spectacular",
+            "definition": "amazing to see or watch"
+        },
+        {
+            "word": "incredible",
+            "definition": "so amazing it's hard to believe"
+        },
+        {
+            "word": "fantastic",
+            "definition": "extremely good and fun"
+        },
+        {
+            "word": "brilliant",
+            "definition": "very bright or very smart"
+        },
+        {
+            "word": "curious",
+            "definition": "wanting to learn and discover things"
+        },
+        {
+            "word": "brave",
+            "definition": "not afraid to try hard things"
+        },
+        {
+            "word": "gentle",
+            "definition": "soft, kind, and careful"
+        },
+        {
+            "word": "silly",
+            "definition": "funny and making people laugh"
+        },
+        {
+            "word": "clever",
+            "definition": "smart and good at solving things"
+        },
+        {
+            "word": "friendly",
+            "definition": "nice and kind to others"
+        },
+        {
+            "word": "cheerful",
+            "definition": "happy and full of joy"
+        },
+        {
+            "word": "grumpy",
+            "definition": "a little cranky or not happy"
+        },
+        {
+            "word": "sleepy",
+            "definition": "tired and wanting to rest"
+        },
+        {
+            "word": "hungry",
+            "definition": "needing to eat food"
+        },
+        {
+            "word": "thirsty",
+            "definition": "needing to drink water"
+        },
+        {
+            "word": "kaleidoscope",
+            "definition": "tube with colorful changing patterns"
+        },
+        {
+            "word": "caterpillar",
+            "definition": "fuzzy bug that becomes a butterfly"
+        },
+        {
+            "word": "ladybird",
+            "definition": "small red bug with black spots"
+        },
+        {
+            "word": "firefly",
+            "definition": "bug that lights up at night"
+        },
+        {
+            "word": "dragonfly",
+            "definition": "flying bug with long thin body"
+        },
+        {
+            "word": "hummingbird",
+            "definition": "tiny bird that can hover in air"
+        },
+        {
+            "word": "seashell",
+            "definition": "hard home of ocean animals"
+        },
+        {
+            "word": "pebble",
+            "definition": "small smooth stone"
+        },
+        {
+            "word": "crystal",
+            "definition": "clear sparkly rock or glass"
+        },
+        {
+            "word": "narwhal",
+            "definition": "whale with a long twisted horn"
+        },
+        {
+            "word": "platypus",
+            "definition": "furry animal with a duck bill"
+        },
+        {
+            "word": "chameleon",
+            "definition": "lizard that changes colors"
+        },
+        {
+            "word": "porcupine",
+            "definition": "animal covered in sharp spikes"
+        },
+        {
+            "word": "armadillo",
+            "definition": "animal with a hard shell body"
+        },
+        {
+            "word": "icicle",
+            "definition": "pointed ice hanging down"
+        },
+        {
+            "word": "driftwood",
+            "definition": "wood that floats in from the sea"
+        },
+        {
+            "word": "nebula",
+            "definition": "colorful cloud of dust and gas in space"
+        },
+        {
+            "word": "zephyr",
+            "definition": "soft gentle wind"
+        },
+        {
+            "word": "prism",
+            "definition": "clear shape that makes rainbows from light"
+        },
+        {
+            "word": "amber",
+            "definition": "golden fossil made from old tree sap"
+        },
+        {
+            "word": "oasis",
+            "definition": "water and trees in the desert"
+        },
+        {
+            "word": "cavern",
+            "definition": "very big cave underground"
+        },
+        {
+            "word": "canyon",
+            "definition": "deep valley with steep rocky sides"
+        },
+        {
+            "word": "glacier",
+            "definition": "huge river of ice that moves slowly"
+        },
+        {
+            "word": "aurora",
+            "definition": "colorful dancing lights in the night sky"
+        },
+        {
+            "word": "comet",
+            "definition": "space rock with a glowing tail"
+        },
+        {
+            "word": "crater",
+            "definition": "big round hole in the ground"
+        },
+        {
+            "word": "lagoon",
+            "definition": "shallow pool of water by the sea"
+        },
+        {
+            "word": "tundra",
+            "definition": "cold flat land with no trees"
+        },
+        {
+            "word": "savanna",
+            "definition": "grassland with few trees and animals"
+        },
+        {
+            "word": "tide",
+            "definition": "ocean water moving in and out"
+        },
+        {
+            "word": "ripple",
+            "definition": "small wave on water"
+        },
+        {
+            "word": "whirlpool",
+            "definition": "water spinning in a circle"
+        },
+        {
+            "word": "tornado",
+            "definition": "spinning wind shaped like a funnel"
+        },
+        {
+            "word": "avalanche",
+            "definition": "snow rushing down a mountain"
+        },
+        {
+            "word": "horizon",
+            "definition": "line where sky meets land or sea"
+        },
+        {
+            "word": "compass",
+            "definition": "tool that shows which way is north"
+        },
+        {
+            "word": "anchor",
+            "definition": "heavy metal that holds boats still"
+        },
+        {
+            "word": "mosaic",
+            "definition": "picture made from tiny colored pieces"
+        },
+        {
+            "word": "silhouette",
+            "definition": "dark outline shape of something"
+        },
+        {
+            "word": "reflection",
+            "definition": "picture of something in water or mirror"
+        },
+        {
+            "word": "fossil",
+            "definition": "old animal or plant turned to stone"
+        },
+        {
+            "word": "equator",
+            "definition": "imaginary line around Earth's middle"
+        },
+        {
+            "word": "hemisphere",
+            "definition": "half of the Earth"
+        },
+        {
+            "word": "continent",
+            "definition": "huge piece of land on Earth"
+        },
+        {
+            "word": "peninsula",
+            "definition": "land with water on three sides"
+        },
+        {
+            "word": "archipelago",
+            "definition": "group of islands close together"
+        },
+        {
+            "word": "delta",
+            "definition": "where a river splits into the sea"
+        },
+        {
+            "word": "estuary",
+            "definition": "where river water meets sea water"
+        },
+        {
+            "word": "fjord",
+            "definition": "deep narrow water between tall cliffs"
+        },
+        {
+            "word": "geyser",
+            "definition": "hot water shooting up from the ground"
+        },
+        {
+            "word": "dune",
+            "definition": "hill made of sand"
+        },
+        {
+            "word": "mesa",
+            "definition": "flat mountain with steep sides"
+        },
+        {
+            "word": "plateau",
+            "definition": "high flat area of land"
+        },
+        {
+            "word": "valley",
+            "definition": "low land between mountains or hills"
+        },
+        {
+            "word": "summit",
+            "definition": "the very top of a mountain"
+        },
+        {
+            "word": "chamber",
+            "definition": "special room inside a building"
+        },
+        {
+            "word": "turret",
+            "definition": "small round tower on a castle"
+        },
+        {
+            "word": "drawbridge",
+            "definition": "bridge that lifts up and down"
+        },
+        {
+            "word": "constellation",
+            "definition": "group of stars that make a picture"
+        },
+        {
+            "word": "meteor",
+            "definition": "space rock that burns in the sky"
+        },
+        {
+            "word": "eclipse",
+            "definition": "when moon covers the sun"
+        },
+        {
+            "word": "crescent",
+            "definition": "curved moon shape like a smile"
+        },
+        {
+            "word": "cocoon",
+            "definition": "silk case where caterpillar sleeps"
+        },
+        {
+            "word": "hive",
+            "definition": "home where bees live together"
+        },
+        {
+            "word": "den",
+            "definition": "cozy home for wild animals"
+        },
+        {
+            "word": "burrow",
+            "definition": "tunnel home dug underground"
+        },
+        {
+            "word": "nest",
+            "definition": "home that birds build"
+        },
+        {
+            "word": "web",
+            "definition": "net that spiders make"
+        },
+        {
+            "word": "antlers",
+            "definition": "branchy horns on a deer's head"
+        },
+        {
+            "word": "tentacle",
+            "definition": "long bendy arm of sea animals"
+        },
+        {
+            "word": "scales",
+            "definition": "small hard plates on fish and reptiles"
+        },
+        {
+            "word": "fin",
+            "definition": "flat body part that helps fish swim"
+        },
+        {
+            "word": "beak",
+            "definition": "hard pointed mouth of a bird"
+        },
+        {
+            "word": "talons",
+            "definition": "sharp curved claws of a bird"
+        },
+        {
+            "word": "mane",
+            "definition": "long thick hair on an animal's neck"
+        },
+        {
+            "word": "tusk",
+            "definition": "long pointed tooth sticking out"
+        },
+        {
+            "word": "pouch",
+            "definition": "pocket on an animal's belly"
+        },
+        {
+            "word": "quill",
+            "definition": "sharp spike or special feather"
+        },
+        {
+            "word": "camouflage",
+            "definition": "colors that help animals hide"
+        },
+        {
+            "word": "hibernate",
+            "definition": "to sleep all winter long"
+        },
+        {
+            "word": "migrate",
+            "definition": "to travel far for warmer weather"
+        },
+        {
+            "word": "nocturnal",
+            "definition": "awake at night and sleeping in day"
+        },
+        {
+            "word": "predator",
+            "definition": "animal that hunts other animals"
+        },
+        {
+            "word": "prey",
+            "definition": "animal that gets hunted"
+        },
+        {
+            "word": "herd",
+            "definition": "big group of animals together"
+        },
+        {
+            "word": "flock",
+            "definition": "group of birds flying together"
+        },
+        {
+            "word": "school",
+            "definition": "group of fish swimming together"
+        },
+        {
+            "word": "swarm",
+            "definition": "large group of insects moving together"
+        },
+        {
+            "word": "colony",
+            "definition": "group of animals living together"
+        },
+        {
+            "word": "emerge",
+            "definition": "to come out from hiding"
+        },
+        {
+            "word": "glide",
+            "definition": "to move smoothly through air or water"
+        },
+        {
+            "word": "soar",
+            "definition": "to fly high in the sky"
+        },
+        {
+            "word": "shimmer",
+            "definition": "to shine with soft wavering light"
+        },
+        {
+            "word": "glimmer",
+            "definition": "to shine with faint flickering light"
+        },
+        {
+            "word": "flutter",
+            "definition": "to move wings quickly and lightly"
+        },
+        {
+            "word": "patter",
+            "definition": "soft tapping sound of rain or feet"
+        }
+    ]
+}
