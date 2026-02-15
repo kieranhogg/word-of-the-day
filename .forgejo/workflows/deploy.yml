@@ -1,0 +1,16 @@
+name: Deploy FastAPI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Komodo Deployment
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.KOMODO_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            https://your-komodo-instance/api/execute/deployment-id
