@@ -1,13 +1,8 @@
-version: '3.8'
-
 services:
-  fastapi:
+  web:
+    # Build the image from the Dockerfile in the current directory
     build: .
-    container_name: fastapi-app
-    restart: unless-stopped
+
+    # Host the FastAPI application on port 8000
     ports:
       - "8000:8000"
-    environment:
-      - ENV=production
-    volumes:
-      - ./app:/app
