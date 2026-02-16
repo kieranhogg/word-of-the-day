@@ -6,6 +6,12 @@ import random
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+WORDS_PATH = BASE_DIR / "data" / "words.json"
+
+
 app = FastAPI()
 
 class Word(BaseModel):
@@ -14,7 +20,7 @@ class Word(BaseModel):
 
 @lru_cache(maxsize=1)
 def load_things() -> list:
-    with open("data/words.json", "r") as f:
+    with open(WORDS_PATH, "r") as f:
         return json.load(f)["words"]
 
 @app.get("/words/wotd/")
