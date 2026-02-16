@@ -6,10 +6,3 @@ services:
     # Expose port 8080 internally (Coolify will handle the external mapping)
     expose:
       - "8080"
-    
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/words/wotd"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
