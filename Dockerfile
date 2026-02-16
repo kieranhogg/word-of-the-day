@@ -43,7 +43,7 @@ USER nonroot
 
 # Run the FastAPI application by default
 # Uses `uv run` to sync dependencies on startup, respecting UV_NO_DEV
-CMD ["uv", "run", "fastapi", "run", "main.py", "--port", "80", "--host", "0.0.0.0"]
+CMD ["uv", "run", "fastapi", "run", "main.py", "--port", "8080", "--host", "0.0.0.0"]
 
 # If running behind a proxy like Nginx or Traefik add --proxy-headers
 # CMD ["fastapi", "run", "app/main.py", "--port", "80", "--proxy-headers"]
