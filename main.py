@@ -4,6 +4,7 @@ from functools import lru_cache
 import random
 
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 from pathlib import Path
@@ -15,7 +16,7 @@ WORDS_PATH = BASE_DIR / "data" / "words.json"
 app = FastAPI()
 
 class Word(BaseModel):
-    name: str
+    word: str
     definition: str
 
 @lru_cache(maxsize=1)
@@ -27,7 +28,7 @@ def load_things() -> list:
 def get_word():
     today = int(dt.now().strftime("%-j"))
     all_things = load_things()
-    word = all_things[today]
+    word = Word(**all_things[today])
     
     if not word:
         raise HTTPException(status_code=404, detail="Thing not found")
@@ -42,3 +43,8 @@ def words():
 @app.get("/words/random")
 def random_word():
     return random.choice(load_things())
+
+@app.get("/")
+def home():
+    response = RedirectResponse(url='/docs')
+    return response 
