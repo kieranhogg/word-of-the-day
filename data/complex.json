@@ -1,0 +1,2566 @@
+{
+    "words": [
+        {
+            "word": "nebula",
+            "definition": "colorful cloud of dust and gas in space",
+            "category": "Space & Science",
+            "order": 1,
+            "level": "complex"
+        },
+        {
+            "word": "zephyr",
+            "definition": "soft gentle wind",
+            "category": "Earth & Geography",
+            "order": 2,
+            "level": "complex"
+        },
+        {
+            "word": "prism",
+            "definition": "clear shape that makes rainbows from light",
+            "category": "Space & Science",
+            "order": 3,
+            "level": "complex"
+        },
+        {
+            "word": "amber",
+            "definition": "golden fossil made from old tree sap",
+            "category": "Animals & Nature",
+            "order": 4,
+            "level": "complex"
+        },
+        {
+            "word": "oasis",
+            "definition": "water and trees in the desert",
+            "category": "Earth & Geography",
+            "order": 5,
+            "level": "complex"
+        },
+        {
+            "word": "glacier",
+            "definition": "huge river of ice that moves slowly",
+            "category": "Earth & Geography",
+            "order": 6,
+            "level": "complex"
+        },
+        {
+            "word": "aurora",
+            "definition": "colorful dancing lights in the night sky",
+            "category": "Space & Science",
+            "order": 7,
+            "level": "complex"
+        },
+        {
+            "word": "lagoon",
+            "definition": "shallow pool of water by the sea",
+            "category": "Earth & Geography",
+            "order": 8,
+            "level": "complex"
+        },
+        {
+            "word": "archipelago",
+            "definition": "group of islands close together",
+            "category": "Earth & Geography",
+            "order": 9,
+            "level": "complex"
+        },
+        {
+            "word": "fjord",
+            "definition": "deep narrow water between tall cliffs",
+            "category": "Earth & Geography",
+            "order": 10,
+            "level": "complex"
+        },
+        {
+            "word": "estuary",
+            "definition": "where river water meets sea water",
+            "category": "Earth & Geography",
+            "order": 11,
+            "level": "complex"
+        },
+        {
+            "word": "camouflage",
+            "definition": "colors that help animals hide",
+            "category": "Animals & Nature",
+            "order": 12,
+            "level": "complex"
+        },
+        {
+            "word": "nocturnal",
+            "definition": "awake at night and sleeping in day",
+            "category": "Animals & Nature",
+            "order": 13,
+            "level": "complex"
+        },
+        {
+            "word": "equator",
+            "definition": "imaginary line around Earth's middle",
+            "category": "Earth & Geography",
+            "order": 14,
+            "level": "complex"
+        },
+        {
+            "word": "hemisphere",
+            "definition": "half of the Earth",
+            "category": "Earth & Geography",
+            "order": 15,
+            "level": "complex"
+        },
+        {
+            "word": "photosynthesis",
+            "definition": "how plants make food from sunlight",
+            "category": "Space & Science",
+            "order": 16,
+            "level": "complex"
+        },
+        {
+            "word": "metamorphosis",
+            "definition": "a complete change in an animal's body",
+            "category": "Animals & Nature",
+            "order": 17,
+            "level": "complex"
+        },
+        {
+            "word": "bioluminescence",
+            "definition": "light made by living creatures",
+            "category": "Animals & Nature",
+            "order": 18,
+            "level": "complex"
+        },
+        {
+            "word": "echolocation",
+            "definition": "finding things using sound waves",
+            "category": "Animals & Nature",
+            "order": 19,
+            "level": "complex"
+        },
+        {
+            "word": "symbiosis",
+            "definition": "two different living things helping each other",
+            "category": "Animals & Nature",
+            "order": 20,
+            "level": "complex"
+        },
+        {
+            "word": "atmosphere",
+            "definition": "the layers of gas surrounding a planet",
+            "category": "Space & Science",
+            "order": 21,
+            "level": "complex"
+        },
+        {
+            "word": "supernova",
+            "definition": "a star that explodes with great brightness",
+            "category": "Space & Science",
+            "order": 22,
+            "level": "complex"
+        },
+        {
+            "word": "evaporation",
+            "definition": "liquid water turning into invisible gas",
+            "category": "Space & Science",
+            "order": 23,
+            "level": "complex"
+        },
+        {
+            "word": "precipitation",
+            "definition": "water falling to earth as rain or snow",
+            "category": "Earth & Geography",
+            "order": 24,
+            "level": "complex"
+        },
+        {
+            "word": "topography",
+            "definition": "the shape of the land's surface",
+            "category": "Earth & Geography",
+            "order": 25,
+            "level": "complex"
+        },
+        {
+            "word": "tributary",
+            "definition": "a smaller river flowing into a larger one",
+            "category": "Earth & Geography",
+            "order": 26,
+            "level": "complex"
+        },
+        {
+            "word": "trench",
+            "definition": "a very deep and narrow valley in the ocean",
+            "category": "Earth & Geography",
+            "order": 27,
+            "level": "complex"
+        },
+        {
+            "word": "courageous",
+            "definition": "showing great bravery in difficult times",
+            "category": "Feelings & Descriptions",
+            "order": 28,
+            "level": "complex"
+        },
+        {
+            "word": "meticulous",
+            "definition": "being very careful about small details",
+            "category": "Feelings & Descriptions",
+            "order": 29,
+            "level": "complex"
+        },
+        {
+            "word": "inquisitive",
+            "definition": "having a strong desire to learn more",
+            "category": "Feelings & Descriptions",
+            "order": 30,
+            "level": "complex"
+        },
+        {
+            "word": "exuberant",
+            "definition": "filled with energy and excitement",
+            "category": "Feelings & Descriptions",
+            "order": 31,
+            "level": "complex"
+        },
+        {
+            "word": "melancholy",
+            "definition": "a feeling of pensive sadness",
+            "category": "Feelings & Descriptions",
+            "order": 32,
+            "level": "complex"
+        },
+        {
+            "word": "ethereal",
+            "definition": "extremely delicate and light",
+            "category": "Fantasy & Magic",
+            "order": 33,
+            "level": "complex"
+        },
+        {
+            "word": "labyrinth",
+            "definition": "a complicated maze of paths",
+            "category": "Fantasy & Magic",
+            "order": 34,
+            "level": "complex"
+        },
+        {
+            "word": "incantation",
+            "definition": "magic words spoken as a spell",
+            "category": "Fantasy & Magic",
+            "order": 35,
+            "level": "complex"
+        },
+        {
+            "word": "portal",
+            "definition": "a magical doorway to another place",
+            "category": "Fantasy & Magic",
+            "order": 36,
+            "level": "complex"
+        },
+        {
+            "word": "alchemy",
+            "definition": "ancient science focused on transformation",
+            "category": "Fantasy & Magic",
+            "order": 37,
+            "level": "complex"
+        },
+        {
+            "word": "synchronize",
+            "definition": "to make things happen at the same time",
+            "category": "Action & Movement",
+            "order": 38,
+            "level": "complex"
+        },
+        {
+            "word": "oscillate",
+            "definition": "to move back and forth like a pendulum",
+            "category": "Action & Movement",
+            "order": 39,
+            "level": "complex"
+        },
+        {
+            "word": "navigate",
+            "definition": "to find a way through a difficult place",
+            "category": "Action & Movement",
+            "order": 40,
+            "level": "complex"
+        },
+        {
+            "word": "transform",
+            "definition": "to change completely in form or look",
+            "category": "Action & Movement",
+            "order": 41,
+            "level": "complex"
+        },
+        {
+            "word": "accelerate",
+            "definition": "to begin to move more quickly",
+            "category": "Action & Movement",
+            "order": 42,
+            "level": "complex"
+        },
+        {
+            "word": "hibernate",
+            "definition": "spending winter in a dormant state",
+            "category": "Animals & Nature",
+            "order": 43,
+            "level": "complex"
+        },
+        {
+            "word": "ecosystem",
+            "definition": "a biological community of interacting organisms",
+            "category": "Animals & Nature",
+            "order": 44,
+            "level": "complex"
+        },
+        {
+            "word": "velocity",
+            "definition": "the speed of something in a given direction",
+            "category": "Space & Science",
+            "order": 45,
+            "level": "complex"
+        },
+        {
+            "word": "biodiversity",
+            "definition": "the variety of life in the world",
+            "category": "Animals & Nature",
+            "order": 46,
+            "level": "complex"
+        },
+        {
+            "word": "transparent",
+            "definition": "allowing light to pass through clearly",
+            "category": "Space & Science",
+            "order": 47,
+            "level": "complex"
+        },
+        {
+            "word": "translucent",
+            "definition": "allowing some light to pass through",
+            "category": "Space & Science",
+            "order": 48,
+            "level": "complex"
+        },
+        {
+            "word": "opaque",
+            "definition": "not able to be seen through",
+            "category": "Space & Science",
+            "order": 49,
+            "level": "complex"
+        },
+        {
+            "word": "geothermal",
+            "definition": "heat produced inside the Earth",
+            "category": "Earth & Geography",
+            "order": 50,
+            "level": "complex"
+        },
+        {
+            "word": "equinox",
+            "definition": "when day and night are equal length",
+            "category": "Space & Science",
+            "order": 51,
+            "level": "complex"
+        },
+        {
+            "word": "solstice",
+            "definition": "when the sun reaches its highest or lowest point",
+            "category": "Space & Science",
+            "order": 52,
+            "level": "complex"
+        },
+        {
+            "word": "sedimentary",
+            "definition": "rock formed from sand and mud",
+            "category": "Earth & Geography",
+            "order": 53,
+            "level": "complex"
+        },
+        {
+            "word": "igneous",
+            "definition": "rock formed from cooled lava",
+            "category": "Earth & Geography",
+            "order": 54,
+            "level": "complex"
+        },
+        {
+            "word": "metamorphic",
+            "definition": "rock changed by heat and pressure",
+            "category": "Earth & Geography",
+            "order": 55,
+            "level": "complex"
+        },
+        {
+            "word": "chlorophyll",
+            "definition": "green pigment found in plants",
+            "category": "Animals & Nature",
+            "order": 56,
+            "level": "complex"
+        },
+        {
+            "word": "pollination",
+            "definition": "transfer of pollen to make seeds",
+            "category": "Animals & Nature",
+            "order": 57,
+            "level": "complex"
+        },
+        {
+            "word": "germination",
+            "definition": "the process of a seed starting to grow",
+            "category": "Animals & Nature",
+            "order": 58,
+            "level": "complex"
+        },
+        {
+            "word": "crustacean",
+            "definition": "animal with a hard shell like a crab",
+            "category": "Animals & Nature",
+            "order": 59,
+            "level": "complex"
+        },
+        {
+            "word": "mollusk",
+            "definition": "animal with a soft body and often a shell",
+            "category": "Animals & Nature",
+            "order": 60,
+            "level": "complex"
+        },
+        {
+            "word": "vertebrate",
+            "definition": "an animal that has a backbone",
+            "category": "Animals & Nature",
+            "order": 61,
+            "level": "complex"
+        },
+        {
+            "word": "invertebrate",
+            "definition": "an animal that does not have a backbone",
+            "category": "Animals & Nature",
+            "order": 62,
+            "level": "complex"
+        },
+        {
+            "word": "altitude",
+            "definition": "the height of an object above sea level",
+            "category": "Earth & Geography",
+            "order": 63,
+            "level": "complex"
+        },
+        {
+            "word": "latitude",
+            "definition": "distance north or south of the equator",
+            "category": "Earth & Geography",
+            "order": 64,
+            "level": "complex"
+        },
+        {
+            "word": "longitude",
+            "definition": "distance east or west of the prime meridian",
+            "category": "Earth & Geography",
+            "order": 65,
+            "level": "complex"
+        },
+        {
+            "word": "tectonic",
+            "definition": "relating to the structure of the earth's crust",
+            "category": "Earth & Geography",
+            "order": 66,
+            "level": "complex"
+        },
+        {
+            "word": "magma",
+            "definition": "hot fluid rock below the earth's surface",
+            "category": "Earth & Geography",
+            "order": 67,
+            "level": "complex"
+        },
+        {
+            "word": "observatory",
+            "definition": "a room or building for studying the stars",
+            "category": "Space & Science",
+            "order": 68,
+            "level": "complex"
+        },
+        {
+            "word": "constellation",
+            "definition": "a group of stars forming a pattern",
+            "category": "Space & Science",
+            "order": 69,
+            "level": "complex"
+        },
+        {
+            "word": "galaxy",
+            "definition": "a system of millions of stars and gas",
+            "category": "Space & Science",
+            "order": 70,
+            "level": "complex"
+        },
+        {
+            "word": "orbit",
+            "definition": "the curved path of a planet or satellite",
+            "category": "Space & Science",
+            "order": 71,
+            "level": "complex"
+        },
+        {
+            "word": "satellite",
+            "definition": "an object that orbits a planet",
+            "category": "Space & Science",
+            "order": 72,
+            "level": "complex"
+        },
+        {
+            "word": "telescopic",
+            "definition": "visible only through a telescope",
+            "category": "Space & Science",
+            "order": 73,
+            "level": "complex"
+        },
+        {
+            "word": "gravity",
+            "definition": "the force that attracts objects toward each other",
+            "category": "Space & Science",
+            "order": 74,
+            "level": "complex"
+        },
+        {
+            "word": "friction",
+            "definition": "the resistance when one surface moves over another",
+            "category": "Space & Science",
+            "order": 75,
+            "level": "complex"
+        },
+        {
+            "word": "magnetism",
+            "definition": "a physical force that attracts or repels",
+            "category": "Space & Science",
+            "order": 76,
+            "level": "complex"
+        },
+        {
+            "word": "buoyancy",
+            "definition": "the ability of an object to float in water",
+            "category": "Space & Science",
+            "order": 77,
+            "level": "complex"
+        },
+        {
+            "word": "conduction",
+            "definition": "the transfer of heat through a material",
+            "category": "Space & Science",
+            "order": 78,
+            "level": "complex"
+        },
+        {
+            "word": "convection",
+            "definition": "the transfer of heat by moving liquid or gas",
+            "category": "Space & Science",
+            "order": 79,
+            "level": "complex"
+        },
+        {
+            "word": "radiation",
+            "definition": "energy that comes from a source as waves",
+            "category": "Space & Science",
+            "order": 80,
+            "level": "complex"
+        },
+        {
+            "word": "momentum",
+            "definition": "the quantity of motion of a moving body",
+            "category": "Action & Movement",
+            "order": 81,
+            "level": "complex"
+        },
+        {
+            "word": "inertia",
+            "definition": "the tendency of an object to remain still",
+            "category": "Space & Science",
+            "order": 82,
+            "level": "complex"
+        },
+        {
+            "word": "spectrum",
+            "definition": "the band of colors produced by light",
+            "category": "Space & Science",
+            "order": 83,
+            "level": "complex"
+        },
+        {
+            "word": "ultraviolet",
+            "definition": "light waves that are shorter than visible light",
+            "category": "Space & Science",
+            "order": 84,
+            "level": "complex"
+        },
+        {
+            "word": "infrared",
+            "definition": "light waves that are longer than visible light",
+            "category": "Space & Science",
+            "order": 85,
+            "level": "complex"
+        },
+        {
+            "word": "resonance",
+            "definition": "the quality of a sound being deep and full",
+            "category": "Space & Science",
+            "order": 86,
+            "level": "complex"
+        },
+        {
+            "word": "amplitude",
+            "definition": "the maximum extent of a vibration or wave",
+            "category": "Space & Science",
+            "order": 87,
+            "level": "complex"
+        },
+        {
+            "word": "frequency",
+            "definition": "the rate at which something occurs or vibrates",
+            "category": "Space & Science",
+            "order": 88,
+            "level": "complex"
+        },
+        {
+            "word": "wavelength",
+            "definition": "the distance between successive crests of a wave",
+            "category": "Space & Science",
+            "order": 89,
+            "level": "complex"
+        },
+        {
+            "word": "atom",
+            "definition": "the smallest unit of a chemical element",
+            "category": "Space & Science",
+            "order": 90,
+            "level": "complex"
+        },
+        {
+            "word": "molecule",
+            "definition": "a group of atoms bonded together",
+            "category": "Space & Science",
+            "order": 91,
+            "level": "complex"
+        },
+        {
+            "word": "nucleus",
+            "definition": "the central and most important part of an atom",
+            "category": "Space & Science",
+            "order": 92,
+            "level": "complex"
+        },
+        {
+            "word": "electron",
+            "definition": "a stable subatomic particle with negative charge",
+            "category": "Space & Science",
+            "order": 93,
+            "level": "complex"
+        },
+        {
+            "word": "proton",
+            "definition": "a stable subatomic particle with positive charge",
+            "category": "Space & Science",
+            "order": 94,
+            "level": "complex"
+        },
+        {
+            "word": "neutron",
+            "definition": "a subatomic particle with no charge",
+            "category": "Space & Science",
+            "order": 95,
+            "level": "complex"
+        },
+        {
+            "word": "element",
+            "definition": "a substance that cannot be broken down further",
+            "category": "Space & Science",
+            "order": 96,
+            "level": "complex"
+        },
+        {
+            "word": "compound",
+            "definition": "a substance formed from two or more elements",
+            "category": "Space & Science",
+            "order": 97,
+            "level": "complex"
+        },
+        {
+            "word": "reaction",
+            "definition": "a process that involves rearrangement of atoms",
+            "category": "Space & Science",
+            "order": 98,
+            "level": "complex"
+        },
+        {
+            "word": "catalyst",
+            "definition": "a substance that increases the rate of a reaction",
+            "category": "Space & Science",
+            "order": 99,
+            "level": "complex"
+        },
+        {
+            "word": "solution",
+            "definition": "a liquid mixture in which a solute is dissolved",
+            "category": "Space & Science",
+            "order": 100,
+            "level": "complex"
+        },
+        {
+            "word": "solvent",
+            "definition": "the liquid in which a solute is dissolved",
+            "category": "Space & Science",
+            "order": 101,
+            "level": "complex"
+        },
+        {
+            "word": "saturation",
+            "definition": "the state when no more of something can be absorbed",
+            "category": "Space & Science",
+            "order": 102,
+            "level": "complex"
+        },
+        {
+            "word": "oxidation",
+            "definition": "the process of a substance combining with oxygen",
+            "category": "Space & Science",
+            "order": 103,
+            "level": "complex"
+        },
+        {
+            "word": "combustion",
+            "definition": "the process of burning something",
+            "category": "Space & Science",
+            "order": 104,
+            "level": "complex"
+        },
+        {
+            "word": "organism",
+            "definition": "an individual animal, plant, or single-celled life",
+            "category": "Animals & Nature",
+            "order": 105,
+            "level": "complex"
+        },
+        {
+            "word": "cytoplasm",
+            "definition": "the material within a living cell",
+            "category": "Space & Science",
+            "order": 106,
+            "level": "complex"
+        },
+        {
+            "word": "membrane",
+            "definition": "a thin pliable layer of tissue",
+            "category": "Space & Science",
+            "order": 107,
+            "level": "complex"
+        },
+        {
+            "word": "organelle",
+            "definition": "a specialized structure within a cell",
+            "category": "Space & Science",
+            "order": 108,
+            "level": "complex"
+        },
+        {
+            "word": "mitochondria",
+            "definition": "the part of a cell that generates energy",
+            "category": "Space & Science",
+            "order": 109,
+            "level": "complex"
+        },
+        {
+            "word": "chromosome",
+            "definition": "a threadlike structure of DNA",
+            "category": "Space & Science",
+            "order": 110,
+            "level": "complex"
+        },
+        {
+            "word": "genetics",
+            "definition": "the study of heredity and variation",
+            "category": "Space & Science",
+            "order": 111,
+            "level": "complex"
+        },
+        {
+            "word": "heredity",
+            "definition": "the passing on of traits from parents",
+            "category": "Space & Science",
+            "order": 112,
+            "level": "complex"
+        },
+        {
+            "word": "mutation",
+            "definition": "a change in the genetic material of a cell",
+            "category": "Space & Science",
+            "order": 113,
+            "level": "complex"
+        },
+        {
+            "word": "evolution",
+            "definition": "the process of change over many generations",
+            "category": "Space & Science",
+            "order": 114,
+            "level": "complex"
+        },
+        {
+            "word": "adaptation",
+            "definition": "a change by which a species becomes better suited",
+            "category": "Animals & Nature",
+            "order": 115,
+            "level": "complex"
+        },
+        {
+            "word": "extinction",
+            "definition": "the state or process of a species dying out",
+            "category": "Animals & Nature",
+            "order": 116,
+            "level": "complex"
+        },
+        {
+            "word": "classification",
+            "definition": "the action or process of sorting items",
+            "category": "Space & Science",
+            "order": 117,
+            "level": "complex"
+        },
+        {
+            "word": "taxonomy",
+            "definition": "the branch of science concerned with classification",
+            "category": "Space & Science",
+            "order": 118,
+            "level": "complex"
+        },
+        {
+            "word": "kingdom",
+            "definition": "the highest category in biological classification",
+            "category": "Animals & Nature",
+            "order": 119,
+            "level": "complex"
+        },
+        {
+            "word": "species",
+            "definition": "a group of living organisms consisting of similar individuals",
+            "category": "Animals & Nature",
+            "order": 120,
+            "level": "complex"
+        },
+        {
+            "word": "population",
+            "definition": "all the inhabitants of a particular area",
+            "category": "Earth & Geography",
+            "order": 121,
+            "level": "complex"
+        },
+        {
+            "word": "community",
+            "definition": "a group of people living in the same place",
+            "category": "Earth & Geography",
+            "order": 122,
+            "level": "complex"
+        },
+        {
+            "word": "biome",
+            "definition": "a large naturally occurring community of flora and fauna",
+            "category": "Earth & Geography",
+            "order": 123,
+            "level": "complex"
+        },
+        {
+            "word": "biosphere",
+            "definition": "the regions of the surface and atmosphere of the earth",
+            "category": "Earth & Geography",
+            "order": 124,
+            "level": "complex"
+        },
+        {
+            "word": "habitat",
+            "definition": "the natural home or environment of an organism",
+            "category": "Animals & Nature",
+            "order": 125,
+            "level": "complex"
+        },
+        {
+            "word": "ecological",
+            "definition": "relating to the relation of organisms to one another",
+            "category": "Animals & Nature",
+            "order": 126,
+            "level": "complex"
+        },
+        {
+            "word": "conservation",
+            "definition": "prevention of wasteful use of a resource",
+            "category": "Earth & Geography",
+            "order": 127,
+            "level": "complex"
+        },
+        {
+            "word": "pollution",
+            "definition": "the presence of a substance that has harmful effects",
+            "category": "Earth & Geography",
+            "order": 128,
+            "level": "complex"
+        },
+        {
+            "word": "atmosphere",
+            "definition": "the envelope of gases surrounding the earth",
+            "category": "Earth & Geography",
+            "order": 129,
+            "level": "complex"
+        },
+        {
+            "word": "troposphere",
+            "definition": "the lowest region of the atmosphere",
+            "category": "Earth & Geography",
+            "order": 130,
+            "level": "complex"
+        },
+        {
+            "word": "stratosphere",
+            "definition": "the layer of the earth's atmosphere above the troposphere",
+            "category": "Earth & Geography",
+            "order": 131,
+            "level": "complex"
+        },
+        {
+            "word": "mesosphere",
+            "definition": "the region of the earth's atmosphere above the stratosphere",
+            "category": "Earth & Geography",
+            "order": 132,
+            "level": "complex"
+        },
+        {
+            "word": "thermosphere",
+            "definition": "the region of the atmosphere above the mesosphere",
+            "category": "Earth & Geography",
+            "order": 133,
+            "level": "complex"
+        },
+        {
+            "word": "exosphere",
+            "definition": "the outermost region of a planet's atmosphere",
+            "category": "Earth & Geography",
+            "order": 134,
+            "level": "complex"
+        },
+        {
+            "word": "ozone",
+            "definition": "a layer in the earth's stratosphere that absorbs UV",
+            "category": "Earth & Geography",
+            "order": 135,
+            "level": "complex"
+        },
+        {
+            "word": "climate",
+            "definition": "the weather conditions prevailing in an area",
+            "category": "Earth & Geography",
+            "order": 136,
+            "level": "complex"
+        },
+        {
+            "word": "meteorology",
+            "definition": "the branch of science concerned with weather",
+            "category": "Space & Science",
+            "order": 137,
+            "level": "complex"
+        },
+        {
+            "word": "barometer",
+            "definition": "an instrument measuring atmospheric pressure",
+            "category": "Space & Science",
+            "order": 138,
+            "level": "complex"
+        },
+        {
+            "word": "anemometer",
+            "definition": "an instrument for measuring the speed of the wind",
+            "category": "Space & Science",
+            "order": 139,
+            "level": "complex"
+        },
+        {
+            "word": "hygrometer",
+            "definition": "an instrument for measuring humidity",
+            "category": "Space & Science",
+            "order": 140,
+            "level": "complex"
+        },
+        {
+            "word": "precipitation",
+            "definition": "rain, snow, sleet, or hail that falls to the ground",
+            "category": "Earth & Geography",
+            "order": 141,
+            "level": "complex"
+        },
+        {
+            "word": "condensation",
+            "definition": "the conversion of a vapor or gas to a liquid",
+            "category": "Space & Science",
+            "order": 142,
+            "level": "complex"
+        },
+        {
+            "word": "transpiration",
+            "definition": "the process of water movement through a plant",
+            "category": "Animals & Nature",
+            "order": 143,
+            "level": "complex"
+        },
+        {
+            "word": "humidity",
+            "definition": "the state or quality of being humid",
+            "category": "Earth & Geography",
+            "order": 144,
+            "level": "complex"
+        },
+        {
+            "word": "front",
+            "definition": "the forward edge of an advancing mass of air",
+            "category": "Earth & Geography",
+            "order": 145,
+            "level": "complex"
+        },
+        {
+            "word": "cyclone",
+            "definition": "a system of winds rotating inward",
+            "category": "Earth & Geography",
+            "order": 146,
+            "level": "complex"
+        },
+        {
+            "word": "anticyclone",
+            "definition": "a system of winds rotating outward",
+            "category": "Earth & Geography",
+            "order": 147,
+            "level": "complex"
+        },
+        {
+            "word": "monsoon",
+            "definition": "a seasonal prevailing wind in South Asia",
+            "category": "Earth & Geography",
+            "order": 148,
+            "level": "complex"
+        },
+        {
+            "word": "current",
+            "definition": "a body of water or air moving in a definite direction",
+            "category": "Earth & Geography",
+            "order": 149,
+            "level": "complex"
+        },
+        {
+            "word": "tide",
+            "definition": "the alternate rising and falling of the sea",
+            "category": "Earth & Geography",
+            "order": 150,
+            "level": "complex"
+        },
+        {
+            "word": "upwelling",
+            "definition": "a rising of seawater, magma, or other liquid",
+            "category": "Earth & Geography",
+            "order": 151,
+            "level": "complex"
+        },
+        {
+            "word": "salinity",
+            "definition": "the concentration of dissolved salts in water",
+            "category": "Earth & Geography",
+            "order": 152,
+            "level": "complex"
+        },
+        {
+            "word": "continental",
+            "definition": "forming or belonging to a continent",
+            "category": "Earth & Geography",
+            "order": 153,
+            "level": "complex"
+        },
+        {
+            "word": "geology",
+            "definition": "the science that deals with the earth's physical structure",
+            "category": "Space & Science",
+            "order": 154,
+            "level": "complex"
+        },
+        {
+            "word": "mineralogy",
+            "definition": "the scientific study of minerals",
+            "category": "Space & Science",
+            "order": 155,
+            "level": "complex"
+        },
+        {
+            "word": "petrology",
+            "definition": "the branch of science concerned with rocks",
+            "category": "Space & Science",
+            "order": 156,
+            "level": "complex"
+        },
+        {
+            "word": "paleontology",
+            "definition": "the branch of science concerned with fossils",
+            "category": "Space & Science",
+            "order": 157,
+            "level": "complex"
+        },
+        {
+            "word": "seismology",
+            "definition": "the branch of science concerned with earthquakes",
+            "category": "Space & Science",
+            "order": 158,
+            "level": "complex"
+        },
+        {
+            "word": "vulcanology",
+            "definition": "the scientific study of volcanoes",
+            "category": "Space & Science",
+            "order": 159,
+            "level": "complex"
+        },
+        {
+            "word": "topography",
+            "definition": "the arrangement of the natural and artificial physical features",
+            "category": "Earth & Geography",
+            "order": 160,
+            "level": "complex"
+        },
+        {
+            "word": "cartography",
+            "definition": "the science or practice of drawing maps",
+            "category": "Space & Science",
+            "order": 161,
+            "level": "complex"
+        },
+        {
+            "word": "geography",
+            "definition": "the study of the physical features of the earth",
+            "category": "Space & Science",
+            "order": 162,
+            "level": "complex"
+        },
+        {
+            "word": "anthropology",
+            "definition": "the study of human societies and cultures",
+            "category": "Space & Science",
+            "order": 163,
+            "level": "complex"
+        },
+        {
+            "word": "archaeology",
+            "definition": "the study of human history through excavation",
+            "category": "Space & Science",
+            "order": 164,
+            "level": "complex"
+        },
+        {
+            "word": "sociology",
+            "definition": "the study of the development of human society",
+            "category": "Space & Science",
+            "order": 165,
+            "level": "complex"
+        },
+        {
+            "word": "psychology",
+            "definition": "the scientific study of the human mind",
+            "category": "Space & Science",
+            "order": 166,
+            "level": "complex"
+        },
+        {
+            "word": "economics",
+            "definition": "the branch of knowledge concerned with wealth",
+            "category": "Space & Science",
+            "order": 167,
+            "level": "complex"
+        },
+        {
+            "word": "politics",
+            "definition": "the activities associated with governance",
+            "category": "Fantasy & Magic",
+            "order": 168,
+            "level": "complex"
+        },
+        {
+            "word": "philosophy",
+            "definition": "the study of the fundamental nature of knowledge",
+            "category": "Space & Science",
+            "order": 169,
+            "level": "complex"
+        },
+        {
+            "word": "logic",
+            "definition": "reasoning conducted according to strict principles",
+            "category": "Space & Science",
+            "order": 170,
+            "level": "complex"
+        },
+        {
+            "word": "ethics",
+            "definition": "moral principles that govern a person's behavior",
+            "category": "Space & Science",
+            "order": 171,
+            "level": "complex"
+        },
+        {
+            "word": "aesthetics",
+            "definition": "a set of principles concerned with nature and appreciation of beauty",
+            "category": "Space & Science",
+            "order": 172,
+            "level": "complex"
+        },
+        {
+            "word": "theology",
+            "definition": "the study of the nature of God and religious belief",
+            "category": "Fantasy & Magic",
+            "order": 173,
+            "level": "complex"
+        },
+        {
+            "word": "mythology",
+            "definition": "a collection of myths belonging to a particular people",
+            "category": "Fantasy & Magic",
+            "order": 174,
+            "level": "complex"
+        },
+        {
+            "word": "folklore",
+            "definition": "the traditional beliefs, customs, and stories of a community",
+            "category": "Fantasy & Magic",
+            "order": 175,
+            "level": "complex"
+        },
+        {
+            "word": "literature",
+            "definition": "written works, especially those considered of superior merit",
+            "category": "Fantasy & Magic",
+            "order": 176,
+            "level": "complex"
+        },
+        {
+            "word": "poetry",
+            "definition": "literary work in which special intensity is given to feelings",
+            "category": "Fantasy & Magic",
+            "order": 177,
+            "level": "complex"
+        },
+        {
+            "word": "drama",
+            "definition": "a play for theater, radio, or television",
+            "category": "Fantasy & Magic",
+            "order": 178,
+            "level": "complex"
+        },
+        {
+            "word": "fiction",
+            "definition": "literature in the form of prose that describes imaginary events",
+            "category": "Fantasy & Magic",
+            "order": 179,
+            "level": "complex"
+        },
+        {
+            "word": "biography",
+            "definition": "an account of someone's life written by someone else",
+            "category": "Space & Science",
+            "order": 180,
+            "level": "complex"
+        },
+        {
+            "word": "autobiography",
+            "definition": "an account of a person's life written by that person",
+            "category": "Space & Science",
+            "order": 181,
+            "level": "complex"
+        },
+        {
+            "word": "history",
+            "definition": "the study of past events",
+            "category": "Space & Science",
+            "order": 182,
+            "level": "complex"
+        },
+        {
+            "word": "civilization",
+            "definition": "the stage of human social development and organization",
+            "category": "Earth & Geography",
+            "order": 183,
+            "level": "complex"
+        },
+        {
+            "word": "culture",
+            "definition": "the arts and other manifestations of human achievement",
+            "category": "Fantasy & Magic",
+            "order": 184,
+            "level": "complex"
+        },
+        {
+            "word": "society",
+            "definition": "the aggregate of people living together in a community",
+            "category": "Earth & Geography",
+            "order": 185,
+            "level": "complex"
+        },
+        {
+            "word": "government",
+            "definition": "the governing body of a nation, state, or community",
+            "category": "Fantasy & Magic",
+            "order": 186,
+            "level": "complex"
+        },
+        {
+            "word": "democracy",
+            "definition": "a system of government by the whole population",
+            "category": "Fantasy & Magic",
+            "order": 187,
+            "level": "complex"
+        },
+        {
+            "word": "republic",
+            "definition": "a state in which supreme power is held by the people",
+            "category": "Fantasy & Magic",
+            "order": 188,
+            "level": "complex"
+        },
+        {
+            "word": "monarchy",
+            "definition": "a form of government with a monarch at the head",
+            "category": "Fantasy & Magic",
+            "order": 189,
+            "level": "complex"
+        },
+        {
+            "word": "dictatorship",
+            "definition": "government by a dictator",
+            "category": "Fantasy & Magic",
+            "order": 190,
+            "level": "complex"
+        },
+        {
+            "word": "anarchy",
+            "definition": "a state of disorder due to absence of authority",
+            "category": "Fantasy & Magic",
+            "order": 191,
+            "level": "complex"
+        },
+        {
+            "word": "citizenship",
+            "definition": "the position or status of being a citizen",
+            "category": "Fantasy & Magic",
+            "order": 192,
+            "level": "complex"
+        },
+        {
+            "word": "patriotism",
+            "definition": "the quality of being patriotic; devotion to one's country",
+            "category": "Fantasy & Magic",
+            "order": 193,
+            "level": "complex"
+        },
+        {
+            "word": "nationalism",
+            "definition": "identification with one's own nation",
+            "category": "Fantasy & Magic",
+            "order": 194,
+            "level": "complex"
+        },
+        {
+            "word": "globalization",
+            "definition": "the process by which businesses develop international influence",
+            "category": "Earth & Geography",
+            "order": 195,
+            "level": "complex"
+        },
+        {
+            "word": "environment",
+            "definition": "the surroundings in which a person, animal, or plant lives",
+            "category": "Animals & Nature",
+            "order": 196,
+            "level": "complex"
+        },
+        {
+            "word": "sustainability",
+            "definition": "the ability to be maintained at a certain rate",
+            "category": "Earth & Geography",
+            "order": 197,
+            "level": "complex"
+        },
+        {
+            "word": "conservation",
+            "definition": "prevention of wasteful use of a resource",
+            "category": "Earth & Geography",
+            "order": 198,
+            "level": "complex"
+        },
+        {
+            "word": "biodiversity",
+            "definition": "the variety of life in the world",
+            "category": "Animals & Nature",
+            "order": 199,
+            "level": "complex"
+        },
+        {
+            "word": "pollution",
+            "definition": "the presence of a substance that has harmful effects",
+            "category": "Earth & Geography",
+            "order": 200,
+            "level": "complex"
+        },
+        {
+            "word": "climate change",
+            "definition": "a change in global or regional climate patterns",
+            "category": "Earth & Geography",
+            "order": 201,
+            "level": "complex"
+        },
+        {
+            "word": "global warming",
+            "definition": "a gradual increase in the overall temperature of earth",
+            "category": "Earth & Geography",
+            "order": 202,
+            "level": "complex"
+        },
+        {
+            "word": "renewable energy",
+            "definition": "energy from a source that is not depleted",
+            "category": "Space & Science",
+            "order": 203,
+            "level": "complex"
+        },
+        {
+            "word": "fossil fuels",
+            "definition": "a natural fuel such as coal or gas",
+            "category": "Earth & Geography",
+            "order": 204,
+            "level": "complex"
+        },
+        {
+            "word": "deforestation",
+            "definition": "the action of clearing a wide area of trees",
+            "category": "Earth & Geography",
+            "order": 205,
+            "level": "complex"
+        },
+        {
+            "word": "reforestation",
+            "definition": "the process of replanting an area with trees",
+            "category": "Earth & Geography",
+            "order": 206,
+            "level": "complex"
+        },
+        {
+            "word": "urbanization",
+            "definition": "the process of making an area more urban",
+            "category": "Earth & Geography",
+            "order": 207,
+            "level": "complex"
+        },
+        {
+            "word": "industrialization",
+            "definition": "the development of industries in a country",
+            "category": "Space & Science",
+            "order": 208,
+            "level": "complex"
+        },
+        {
+            "word": "technology",
+            "definition": "the application of scientific knowledge for practical purposes",
+            "category": "Space & Science",
+            "order": 209,
+            "level": "complex"
+        },
+        {
+            "word": "communication",
+            "definition": "the imparting or exchanging of information",
+            "category": "Action & Movement",
+            "order": 210,
+            "level": "complex"
+        },
+        {
+            "word": "transportation",
+            "definition": "the action of transporting someone or something",
+            "category": "Action & Movement",
+            "order": 211,
+            "level": "complex"
+        },
+        {
+            "word": "infrastructure",
+            "definition": "the basic physical and organizational structures",
+            "category": "Earth & Geography",
+            "order": 212,
+            "level": "complex"
+        },
+        {
+            "word": "architecture",
+            "definition": "the complex art of designing and constructing buildings",
+            "category": "Fantasy & Magic",
+            "order": 213,
+            "level": "complex"
+        },
+        {
+            "word": "engineering",
+            "definition": "the branch of science concerned with design and building",
+            "category": "Space & Science",
+            "order": 214,
+            "level": "complex"
+        },
+        {
+            "word": "medicine",
+            "definition": "the science or practice of the diagnosis and treatment",
+            "category": "Space & Science",
+            "order": 215,
+            "level": "complex"
+        },
+        {
+            "word": "health",
+            "definition": "the state of being free from illness or injury",
+            "category": "Feelings & Descriptions",
+            "order": 216,
+            "level": "complex"
+        },
+        {
+            "word": "nutrition",
+            "definition": "the process of providing food necessary for health",
+            "category": "Space & Science",
+            "order": 217,
+            "level": "complex"
+        },
+        {
+            "word": "fitness",
+            "definition": "the condition of being physically fit and healthy",
+            "category": "Action & Movement",
+            "order": 218,
+            "level": "complex"
+        },
+        {
+            "word": "hygiene",
+            "definition": "conditions or practices conducive to maintaining health",
+            "category": "Feelings & Descriptions",
+            "order": 219,
+            "level": "complex"
+        },
+        {
+            "word": "disease",
+            "definition": "a disorder of structure or function in a human",
+            "category": "Space & Science",
+            "order": 220,
+            "level": "complex"
+        },
+        {
+            "word": "epidemic",
+            "definition": "a widespread occurrence of an infectious disease",
+            "category": "Space & Science",
+            "order": 221,
+            "level": "complex"
+        },
+        {
+            "word": "pandemic",
+            "definition": "an epidemic of infectious disease that has spread",
+            "category": "Space & Science",
+            "order": 222,
+            "level": "complex"
+        },
+        {
+            "word": "vaccination",
+            "definition": "treatment with a vaccine to produce immunity",
+            "category": "Space & Science",
+            "order": 223,
+            "level": "complex"
+        },
+        {
+            "word": "genetics",
+            "definition": "the study of heredity and the variation of inherited characteristics",
+            "category": "Space & Science",
+            "order": 224,
+            "level": "complex"
+        },
+        {
+            "word": "neuroscience",
+            "definition": "any or all of the sciences which deal with the structure of the nervous system",
+            "category": "Space & Science",
+            "order": 225,
+            "level": "complex"
+        },
+        {
+            "word": "robotics",
+            "definition": "the branch of technology that deals with design and construction of robots",
+            "category": "Space & Science",
+            "order": 226,
+            "level": "complex"
+        },
+        {
+            "word": "artificial intelligence",
+            "definition": "the theory and development of computer systems able to perform human tasks",
+            "category": "Space & Science",
+            "order": 227,
+            "level": "complex"
+        },
+        {
+            "word": "virtual reality",
+            "definition": "the computer-generated simulation of a three-dimensional image",
+            "category": "Fantasy & Magic",
+            "order": 228,
+            "level": "complex"
+        },
+        {
+            "word": "nanotechnology",
+            "definition": "the branch of technology that deals with dimensions of less than 100 nanometers",
+            "category": "Space & Science",
+            "order": 229,
+            "level": "complex"
+        },
+        {
+            "word": "biotechnology",
+            "definition": "the exploitation of biological processes for industrial purposes",
+            "category": "Space & Science",
+            "order": 230,
+            "level": "complex"
+        },
+        {
+            "word": "exploration",
+            "definition": "the action of traveling in or through an unfamiliar area",
+            "category": "Action & Movement",
+            "order": 231,
+            "level": "complex"
+        },
+        {
+            "word": "discovery",
+            "definition": "the action or process of discovering or being discovered",
+            "category": "Space & Science",
+            "order": 232,
+            "level": "complex"
+        },
+        {
+            "word": "invention",
+            "definition": "the action of inventing something, typically a process or device",
+            "category": "Space & Science",
+            "order": 233,
+            "level": "complex"
+        },
+        {
+            "word": "innovation",
+            "definition": "the action or process of innovating",
+            "category": "Space & Science",
+            "order": 234,
+            "level": "complex"
+        },
+        {
+            "word": "creativity",
+            "definition": "the use of the imagination or original ideas",
+            "category": "Fantasy & Magic",
+            "order": 235,
+            "level": "complex"
+        },
+        {
+            "word": "imagination",
+            "definition": "the faculty or action of forming new ideas",
+            "category": "Fantasy & Magic",
+            "order": 236,
+            "level": "complex"
+        },
+        {
+            "word": "philosophy",
+            "definition": "the study of the fundamental nature of knowledge and reality",
+            "category": "Space & Science",
+            "order": 237,
+            "level": "complex"
+        },
+        {
+            "word": "ethics",
+            "definition": "moral principles that govern a person's behavior",
+            "category": "Space & Science",
+            "order": 238,
+            "level": "complex"
+        },
+        {
+            "word": "spirituality",
+            "definition": "the quality of being concerned with the human spirit",
+            "category": "Fantasy & Magic",
+            "order": 239,
+            "level": "complex"
+        },
+        {
+            "word": "faith",
+            "definition": "complete trust or confidence in someone or something",
+            "category": "Fantasy & Magic",
+            "order": 240,
+            "level": "complex"
+        },
+        {
+            "word": "hope",
+            "definition": "a feeling of expectation and desire for a certain thing to happen",
+            "category": "Feelings & Descriptions",
+            "order": 241,
+            "level": "complex"
+        },
+        {
+            "word": "love",
+            "definition": "an intense feeling of deep affection",
+            "category": "Feelings & Descriptions",
+            "order": 242,
+            "level": "complex"
+        },
+        {
+            "word": "peace",
+            "definition": "freedom from disturbance; tranquility",
+            "category": "Feelings & Descriptions",
+            "order": 243,
+            "level": "complex"
+        },
+        {
+            "word": "justice",
+            "definition": "just behavior or treatment",
+            "category": "Fantasy & Magic",
+            "order": 244,
+            "level": "complex"
+        },
+        {
+            "word": "liberty",
+            "definition": "the state of being free within society",
+            "category": "Fantasy & Magic",
+            "order": 245,
+            "level": "complex"
+        },
+        {
+            "word": "equality",
+            "definition": "the state of being equal, especially in status and rights",
+            "category": "Fantasy & Magic",
+            "order": 246,
+            "level": "complex"
+        },
+        {
+            "word": "fraternity",
+            "definition": "a group of people sharing a common profession or interests",
+            "category": "Fantasy & Magic",
+            "order": 247,
+            "level": "complex"
+        },
+        {
+            "word": "community",
+            "definition": "a group of people living in the same place",
+            "category": "Earth & Geography",
+            "order": 248,
+            "level": "complex"
+        },
+        {
+            "word": "solidarity",
+            "definition": "unity or agreement of feeling or action",
+            "category": "Fantasy & Magic",
+            "order": 249,
+            "level": "complex"
+        },
+        {
+            "word": "diversity",
+            "definition": "the state of being diverse; variety",
+            "category": "Earth & Geography",
+            "order": 250,
+            "level": "complex"
+        },
+        {
+            "word": "inclusion",
+            "definition": "the action or state of including or of being included",
+            "category": "Fantasy & Magic",
+            "order": 251,
+            "level": "complex"
+        },
+        {
+            "word": "tolerance",
+            "definition": "the ability or willingness to tolerate something",
+            "category": "Feelings & Descriptions",
+            "order": 252,
+            "level": "complex"
+        },
+        {
+            "word": "empathy",
+            "definition": "the ability to understand and share the feelings of another",
+            "category": "Feelings & Descriptions",
+            "order": 253,
+            "level": "complex"
+        },
+        {
+            "word": "compassion",
+            "definition": "sympathetic pity and concern for the sufferings of others",
+            "category": "Feelings & Descriptions",
+            "order": 254,
+            "level": "complex"
+        },
+        {
+            "word": "kindness",
+            "definition": "the quality of being friendly, generous, and considerate",
+            "category": "Feelings & Descriptions",
+            "order": 255,
+            "level": "complex"
+        },
+        {
+            "word": "gratitude",
+            "definition": "the quality of being thankful",
+            "category": "Feelings & Descriptions",
+            "order": 256,
+            "level": "complex"
+        },
+        {
+            "word": "humility",
+            "definition": "a modest or low view of one's own importance",
+            "category": "Feelings & Descriptions",
+            "order": 257,
+            "level": "complex"
+        },
+        {
+            "word": "integrity",
+            "definition": "the quality of being honest and having strong moral principles",
+            "category": "Feelings & Descriptions",
+            "order": 258,
+            "level": "complex"
+        },
+        {
+            "word": "courage",
+            "definition": "the ability to do something that frightens one",
+            "category": "Feelings & Descriptions",
+            "order": 259,
+            "level": "complex"
+        },
+        {
+            "word": "wisdom",
+            "definition": "the quality of having experience, knowledge, and good judgment",
+            "category": "Space & Science",
+            "order": 260,
+            "level": "complex"
+        },
+        {
+            "word": "knowledge",
+            "definition": "facts, information, and skills acquired by a person",
+            "category": "Space & Science",
+            "order": 261,
+            "level": "complex"
+        },
+        {
+            "word": "education",
+            "definition": "the process of receiving or giving systematic instruction",
+            "category": "Space & Science",
+            "order": 262,
+            "level": "complex"
+        },
+        {
+            "word": "learning",
+            "definition": "the acquisition of knowledge or skills through experience",
+            "category": "Space & Science",
+            "order": 263,
+            "level": "complex"
+        },
+        {
+            "word": "growth",
+            "definition": "the process of increasing in physical size or complexity",
+            "category": "Animals & Nature",
+            "order": 264,
+            "level": "complex"
+        },
+        {
+            "word": "development",
+            "definition": "the process of developing or being developed",
+            "category": "Space & Science",
+            "order": 265,
+            "level": "complex"
+        },
+        {
+            "word": "progress",
+            "definition": "forward or onward movement towards a destination",
+            "category": "Action & Movement",
+            "order": 266,
+            "level": "complex"
+        },
+        {
+            "word": "success",
+            "definition": "the accomplishment of an aim or purpose",
+            "category": "Action & Movement",
+            "order": 267,
+            "level": "complex"
+        },
+        {
+            "word": "happiness",
+            "definition": "the state of being happy",
+            "category": "Feelings & Descriptions",
+            "order": 268,
+            "level": "complex"
+        },
+        {
+            "word": "fulfillment",
+            "definition": "the achievement of something desired",
+            "category": "Feelings & Descriptions",
+            "order": 269,
+            "level": "complex"
+        },
+        {
+            "word": "adventure",
+            "definition": "an unusual and exciting, typically hazardous, experience",
+            "category": "Action & Movement",
+            "order": 270,
+            "level": "complex"
+        },
+        {
+            "word": "exploration",
+            "definition": "the action of traveling in or through an unfamiliar area",
+            "category": "Action & Movement",
+            "order": 271,
+            "level": "complex"
+        },
+        {
+            "word": "discovery",
+            "definition": "the action or process of discovering",
+            "category": "Space & Science",
+            "order": 272,
+            "level": "complex"
+        },
+        {
+            "word": "wonder",
+            "definition": "a feeling of surprise mingled with admiration",
+            "category": "Feelings & Descriptions",
+            "order": 273,
+            "level": "complex"
+        },
+        {
+            "word": "curiosity",
+            "definition": "a strong desire to know or learn something",
+            "category": "Feelings & Descriptions",
+            "order": 274,
+            "level": "complex"
+        },
+        {
+            "word": "imagination",
+            "definition": "the faculty or action of forming new ideas",
+            "category": "Fantasy & Magic",
+            "order": 275,
+            "level": "complex"
+        },
+        {
+            "word": "creativity",
+            "definition": "the use of the imagination or original ideas",
+            "category": "Fantasy & Magic",
+            "order": 276,
+            "level": "complex"
+        },
+        {
+            "word": "inspiration",
+            "definition": "the process of being mentally stimulated to do something",
+            "category": "Fantasy & Magic",
+            "order": 277,
+            "level": "complex"
+        },
+        {
+            "word": "ambition",
+            "definition": "a strong desire to do or to achieve something",
+            "category": "Feelings & Descriptions",
+            "order": 278,
+            "level": "complex"
+        },
+        {
+            "word": "perseverance",
+            "definition": "steadfastness in doing something despite difficulty",
+            "category": "Feelings & Descriptions",
+            "order": 279,
+            "level": "complex"
+        },
+        {
+            "word": "resilience",
+            "definition": "the capacity to recover quickly from difficulties",
+            "category": "Feelings & Descriptions",
+            "order": 280,
+            "level": "complex"
+        },
+        {
+            "word": "patience",
+            "definition": "the capacity to accept or tolerate delay",
+            "category": "Feelings & Descriptions",
+            "order": 281,
+            "level": "complex"
+        },
+        {
+            "word": "discipline",
+            "definition": "the practice of training people to obey rules",
+            "category": "Action & Movement",
+            "order": 282,
+            "level": "complex"
+        },
+        {
+            "word": "responsibility",
+            "definition": "the state or fact of having a duty to deal with something",
+            "category": "Feelings & Descriptions",
+            "order": 283,
+            "level": "complex"
+        },
+        {
+            "word": "leadership",
+            "definition": "the action of leading a group of people or an organization",
+            "category": "Fantasy & Magic",
+            "order": 284,
+            "level": "complex"
+        },
+        {
+            "word": "teamwork",
+            "definition": "the combined action of a group of people",
+            "category": "Action & Movement",
+            "order": 285,
+            "level": "complex"
+        },
+        {
+            "word": "collaboration",
+            "definition": "the action of working with someone to produce or create something",
+            "category": "Action & Movement",
+            "order": 286,
+            "level": "complex"
+        },
+        {
+            "word": "cooperation",
+            "definition": "the process of working together to the same end",
+            "category": "Action & Movement",
+            "order": 287,
+            "level": "complex"
+        },
+        {
+            "word": "communication",
+            "definition": "the imparting or exchanging of information",
+            "category": "Action & Movement",
+            "order": 288,
+            "level": "complex"
+        },
+        {
+            "word": "respect",
+            "definition": "a feeling of deep admiration for someone",
+            "category": "Feelings & Descriptions",
+            "order": 289,
+            "level": "complex"
+        },
+        {
+            "word": "dignity",
+            "definition": "the state or quality of being worthy of honor or respect",
+            "category": "Feelings & Descriptions",
+            "order": 290,
+            "level": "complex"
+        },
+        {
+            "word": "honor",
+            "definition": "high respect; great esteem",
+            "category": "Fantasy & Magic",
+            "order": 291,
+            "level": "complex"
+        },
+        {
+            "word": "truth",
+            "definition": "the quality or state of being true",
+            "category": "Space & Science",
+            "order": 292,
+            "level": "complex"
+        },
+        {
+            "word": "authenticity",
+            "definition": "the quality of being authentic",
+            "category": "Feelings & Descriptions",
+            "order": 293,
+            "level": "complex"
+        },
+        {
+            "word": "integrity",
+            "definition": "the quality of being honest and having strong moral principles",
+            "category": "Feelings & Descriptions",
+            "order": 294,
+            "level": "complex"
+        },
+        {
+            "word": "transparency",
+            "definition": "the condition of being transparent",
+            "category": "Space & Science",
+            "order": 295,
+            "level": "complex"
+        },
+        {
+            "word": "accountability",
+            "definition": "the fact or condition of being accountable; responsibility",
+            "category": "Feelings & Descriptions",
+            "order": 296,
+            "level": "complex"
+        },
+        {
+            "word": "excellence",
+            "definition": "the quality of being outstanding or extremely good",
+            "category": "Feelings & Descriptions",
+            "order": 297,
+            "level": "complex"
+        },
+        {
+            "word": "perfection",
+            "definition": "the state or quality of being perfect",
+            "category": "Feelings & Descriptions",
+            "order": 298,
+            "level": "complex"
+        },
+        {
+            "word": "beauty",
+            "definition": "a combination of qualities that pleases the sight",
+            "category": "Feelings & Descriptions",
+            "order": 299,
+            "level": "complex"
+        },
+        {
+            "word": "harmony",
+            "definition": "the state of being in agreement or concord",
+            "category": "Feelings & Descriptions",
+            "order": 300,
+            "level": "complex"
+        },
+        {
+            "word": "balance",
+            "definition": "an even distribution of weight enabling someone or something to remain upright",
+            "category": "Action & Movement",
+            "order": 301,
+            "level": "complex"
+        },
+        {
+            "word": "rhythm",
+            "definition": "a strong, regular, repeated pattern of movement or sound",
+            "category": "Action & Movement",
+            "order": 302,
+            "level": "complex"
+        },
+        {
+            "word": "melody",
+            "definition": "a sequence of single notes that is musically satisfying",
+            "category": "Fantasy & Magic",
+            "order": 303,
+            "level": "complex"
+        },
+        {
+            "word": "expression",
+            "definition": "the action of making known one's thoughts or feelings",
+            "category": "Action & Movement",
+            "order": 304,
+            "level": "complex"
+        },
+        {
+            "word": "artistry",
+            "definition": "creative skill or ability",
+            "category": "Fantasy & Magic",
+            "order": 305,
+            "level": "complex"
+        },
+        {
+            "word": "craftsmanship",
+            "definition": "skill in a particular craft",
+            "category": "Fantasy & Magic",
+            "order": 306,
+            "level": "complex"
+        },
+        {
+            "word": "performance",
+            "definition": "an act of staging or presenting a play, concert, or other form of entertainment",
+            "category": "Action & Movement",
+            "order": 307,
+            "level": "complex"
+        },
+        {
+            "word": "celebration",
+            "definition": "the action of marking one's pleasure at an important event",
+            "category": "Fantasy & Magic",
+            "order": 308,
+            "level": "complex"
+        },
+        {
+            "word": "festivity",
+            "definition": "the celebration of something in a joyful and exuberant way",
+            "category": "Fantasy & Magic",
+            "order": 309,
+            "level": "complex"
+        },
+        {
+            "word": "hospitality",
+            "definition": "the friendly and generous reception and entertainment of guests",
+            "category": "Feelings & Descriptions",
+            "order": 310,
+            "level": "complex"
+        },
+        {
+            "word": "generosity",
+            "definition": "the quality of being kind and generous",
+            "category": "Feelings & Descriptions",
+            "order": 311,
+            "level": "complex"
+        },
+        {
+            "word": "charity",
+            "definition": "an organization set up to provide help and raise money for those in need",
+            "category": "Fantasy & Magic",
+            "order": 312,
+            "level": "complex"
+        },
+        {
+            "word": "altruism",
+            "definition": "the belief in or practice of disinterested and selfless concern",
+            "category": "Feelings & Descriptions",
+            "order": 313,
+            "level": "complex"
+        },
+        {
+            "word": "volunteerism",
+            "definition": "the use or involvement of volunteer labor",
+            "category": "Action & Movement",
+            "order": 314,
+            "level": "complex"
+        },
+        {
+            "word": "activism",
+            "definition": "the policy or action of using vigorous campaigning to bring about political or social change",
+            "category": "Action & Movement",
+            "order": 315,
+            "level": "complex"
+        },
+        {
+            "word": "advocacy",
+            "definition": "public support for or recommendation of a particular cause or policy",
+            "category": "Action & Movement",
+            "order": 316,
+            "level": "complex"
+        },
+        {
+            "word": "empowerment",
+            "definition": "authority or power given to someone to do something",
+            "category": "Fantasy & Magic",
+            "order": 317,
+            "level": "complex"
+        },
+        {
+            "word": "freedom",
+            "definition": "the power or right to act, speak, or think as one wants",
+            "category": "Fantasy & Magic",
+            "order": 318,
+            "level": "complex"
+        },
+        {
+            "word": "independence",
+            "definition": "the fact or state of being independent",
+            "category": "Fantasy & Magic",
+            "order": 319,
+            "level": "complex"
+        },
+        {
+            "word": "sovereignty",
+            "definition": "supreme power or authority",
+            "category": "Fantasy & Magic",
+            "order": 320,
+            "level": "complex"
+        },
+        {
+            "word": "autonomy",
+            "definition": "the right or condition of self-government",
+            "category": "Fantasy & Magic",
+            "order": 321,
+            "level": "complex"
+        },
+        {
+            "word": "self-determination",
+            "definition": "the process by which a country determines its own statehood",
+            "category": "Fantasy & Magic",
+            "order": 322,
+            "level": "complex"
+        },
+        {
+            "word": "vision",
+            "definition": "the faculty or state of being able to see",
+            "category": "Space & Science",
+            "order": 323,
+            "level": "complex"
+        },
+        {
+            "word": "purpose",
+            "definition": "the reason for which something is done or created",
+            "category": "Feelings & Descriptions",
+            "order": 324,
+            "level": "complex"
+        },
+        {
+            "word": "meaning",
+            "definition": "what is meant by a word, text, concept, or action",
+            "category": "Space & Science",
+            "order": 325,
+            "level": "complex"
+        },
+        {
+            "word": "legacy",
+            "definition": "an amount of money or property left to someone in a will",
+            "category": "Fantasy & Magic",
+            "order": 326,
+            "level": "complex"
+        },
+        {
+            "word": "transformation",
+            "definition": "a thorough or dramatic change in form or appearance",
+            "category": "Action & Movement",
+            "order": 327,
+            "level": "complex"
+        },
+        {
+            "word": "renaissance",
+            "definition": "a revival of or renewed interest in something",
+            "category": "Fantasy & Magic",
+            "order": 328,
+            "level": "complex"
+        },
+        {
+            "word": "enlightenment",
+            "definition": "the action of enlightening or the state of being enlightened",
+            "category": "Space & Science",
+            "order": 329,
+            "level": "complex"
+        },
+        {
+            "word": "transcendence",
+            "definition": "existence or experience beyond the normal or physical level",
+            "category": "Fantasy & Magic",
+            "order": 330,
+            "level": "complex"
+        },
+        {
+            "word": "infinity",
+            "definition": "the state or quality of being infinite",
+            "category": "Space & Science",
+            "order": 331,
+            "level": "complex"
+        },
+        {
+            "word": "eternity",
+            "definition": "infinite or unending time",
+            "category": "Space & Science",
+            "order": 332,
+            "level": "complex"
+        },
+        {
+            "word": "universe",
+            "definition": "all existing matter and space considered as a whole",
+            "category": "Space & Science",
+            "order": 333,
+            "level": "complex"
+        },
+        {
+            "word": "cosmos",
+            "definition": "the universe seen as a well-ordered whole",
+            "category": "Space & Science",
+            "order": 334,
+            "level": "complex"
+        },
+        {
+            "word": "reality",
+            "definition": "the world or the state of things as they actually exist",
+            "category": "Space & Science",
+            "order": 335,
+            "level": "complex"
+        },
+        {
+            "word": "existence",
+            "definition": "the fact or state of living or having objective reality",
+            "category": "Space & Science",
+            "order": 336,
+            "level": "complex"
+        },
+        {
+            "word": "essence",
+            "definition": "the intrinsic nature or indispensable quality of something",
+            "category": "Space & Science",
+            "order": 337,
+            "level": "complex"
+        },
+        {
+            "word": "apprehensive",
+            "definition": "feeling worried or nervous about the future",
+            "category": "Feelings & Descriptions",
+            "order": 338,
+            "level": "complex"
+        },
+        {
+            "word": "exhilarating",
+            "definition": "making you feel very happy, animated, or elated",
+            "category": "Feelings & Descriptions",
+            "order": 339,
+            "level": "complex"
+        },
+        {
+            "word": "catastrophe",
+            "definition": "a sudden event that causes great damage or suffering",
+            "category": "Earth & Geography",
+            "order": 340,
+            "level": "complex"
+        },
+        {
+            "word": "monumental",
+            "definition": "very great or extreme in size or importance",
+            "category": "Feelings & Descriptions",
+            "order": 341,
+            "level": "complex"
+        },
+        {
+            "word": "luminous",
+            "definition": "bright or shining, especially in the dark",
+            "category": "Space & Science",
+            "order": 342,
+            "level": "complex"
+        },
+        {
+            "word": "celestial",
+            "definition": "belonging or relating to the sky or outer space",
+            "category": "Space & Science",
+            "order": 343,
+            "level": "complex"
+        },
+        {
+            "word": "chrysalis",
+            "definition": "the hard shell where a caterpillar turns into a butterfly",
+            "category": "Animals & Nature",
+            "order": 344,
+            "level": "complex"
+        },
+        {
+            "word": "marsupial",
+            "definition": "a mammal that carries its babies in a pouch",
+            "category": "Animals & Nature",
+            "order": 345,
+            "level": "complex"
+        },
+        {
+            "word": "seismograph",
+            "definition": "a tool that measures and records earthquakes",
+            "category": "Space & Science",
+            "order": 346,
+            "level": "complex"
+        },
+        {
+            "word": "meteorite",
+            "definition": "a piece of rock from space that hits the earth",
+            "category": "Space & Science",
+            "order": 347,
+            "level": "complex"
+        },
+        {
+            "word": "isthmus",
+            "definition": "a narrow strip of land connecting two larger areas",
+            "category": "Earth & Geography",
+            "order": 348,
+            "level": "complex"
+        },
+        {
+            "word": "strait",
+            "definition": "a narrow passage of water connecting two large seas",
+            "category": "Earth & Geography",
+            "order": 349,
+            "level": "complex"
+        },
+        {
+            "word": "reservoir",
+            "definition": "a large natural or artificial lake used as a water supply",
+            "category": "Earth & Geography",
+            "order": 350,
+            "level": "complex"
+        },
+        {
+            "word": "barometric",
+            "definition": "relating to the measurement of air pressure",
+            "category": "Space & Science",
+            "order": 351,
+            "level": "complex"
+        },
+        {
+            "word": "mimicry",
+            "definition": "when an animal looks like something else to hide",
+            "category": "Animals & Nature",
+            "order": 352,
+            "level": "complex"
+        },
+        {
+            "word": "predicament",
+            "definition": "a difficult or unpleasant situation",
+            "category": "Feelings & Descriptions",
+            "order": 353,
+            "level": "complex"
+        },
+        {
+            "word": "conspicuous",
+            "definition": "standing out so as to be clearly visible",
+            "category": "Feelings & Descriptions",
+            "order": 354,
+            "level": "complex"
+        },
+        {
+            "word": "obsolete",
+            "definition": "no longer produced or used; out of date",
+            "category": "Space & Science",
+            "order": 355,
+            "level": "complex"
+        },
+        {
+            "word": "centrifugal",
+            "definition": "moving or pushing away from a center point",
+            "category": "Space & Science",
+            "order": 356,
+            "level": "complex"
+        },
+        {
+            "word": "perpendicular",
+            "definition": "a line intersecting another at exactly ninety degrees",
+            "category": "Space & Science",
+            "order": 357,
+            "level": "complex"
+        },
+        {
+            "word": "symmetrical",
+            "definition": "made up of exactly similar parts facing each other",
+            "category": "Space & Science",
+            "order": 358,
+            "level": "complex"
+        },
+        {
+            "word": "chronological",
+            "definition": "arranged in the order that things happened",
+            "category": "Space & Science",
+            "order": 359,
+            "level": "complex"
+        },
+        {
+            "word": "illuminate",
+            "definition": "to light something up or make it clear to understand",
+            "category": "Action & Movement",
+            "order": 360,
+            "level": "complex"
+        },
+        {
+            "word": "levitate",
+            "definition": "to float or rise in the air without support",
+            "category": "Fantasy & Magic",
+            "order": 361,
+            "level": "complex"
+        },
+        {
+            "word": "telepathy",
+            "definition": "communicating thoughts directly from mind to mind",
+            "category": "Fantasy & Magic",
+            "order": 362,
+            "level": "complex"
+        },
+        {
+            "word": "prophecy",
+            "definition": "a prediction or message about what will happen in the future",
+            "category": "Fantasy & Magic",
+            "order": 363,
+            "level": "complex"
+        },
+        {
+            "word": "mythological",
+            "definition": "relating to ancient myths and legendary stories",
+            "category": "Fantasy & Magic",
+            "order": 364,
+            "level": "complex"
+        },
+        {
+            "word": "sorcery",
+            "definition": "the use of magical powers or spells",
+            "category": "Fantasy & Magic",
+            "order": 365,
+            "level": "complex"
+        },
+        {
+            "word": "talisman",
+            "definition": "an object thought to have magic powers and bring good luck",
+            "category": "Fantasy & Magic",
+            "order": 366,
+            "level": "complex"
+        }
+    ]
+}
