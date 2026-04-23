@@ -30,6 +30,14 @@ class Category(Enum):
     complex = "complex"
 
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class Word(BaseModel):
     word: str
     definition: str
