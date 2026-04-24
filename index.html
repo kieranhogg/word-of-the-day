@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="bg-gray-100 font-serif text-gray-900">
+    <head>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.11/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .schoolbell-regular {
+        font-family: "Schoolbell", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+    </style>
+    </head>
+    <body class="schoolbell-regular min-h-screen flex flex-col bg-[radial-gradient(ellipse_at_center,_#fef9c3_0%,_#fefce8_70%)]">
+        <div class="bg-gradient-to-b from-amber-300 to-amber-400 text-center shadow-lg">
+        <h1 class="py-10 text-4xl text-white drop-shadow-lg">Word of the Day</h1>
+        </div>
+        <div class="flex-grow flex flex-col items-center justify-center w-full"
+            x-data="{ date: 'Thursday April 23rd' }">
+        <p class="text-center pt-8 pb-3 text-lg text-amber-400 tracking-wide uppercase" x-text="date"></p>
+        <div x-data="getWord()">
+            <template x-if="word">
+                <div
+                    class="relative rotate-[-1deg] border-l-4 border-amber-400 mx-auto max-w-sm rounded-xl bg-white px-10 py-6 shadow-xl">
+                    <!-- accent dot -->
+                    <span class="absolute top-4 right-4 w-3 h-3 rounded-full bg-amber-400 block"></span>
+                    <div class="schoolbell-regular text-8xl font-bold text-orange-500 pb-2" x-text="word.word"></div>
+                    <p class="text-lg italic text-gray-500" x-text="word.definition"></p>
+                    <hr class="border-amber-100 my-3">
+                    <div class="flex gap-2 mt-3">
+                        <span class="text-xs font-semibold bg-amber-100 text-amber-700 border border-amber-300 rounded-full px-3 py-1">
+                            🌍 Nature
+                        </span>
+                        <span class="text-xs font-semibold bg-orange-100 text-orange-600 border border-amber-300 rounded-full px-3 py-1">
+                            ⭐ Tricky
+                        </span>
+                    </div>
+                </div>
+            </template>
+        </div>
+        </div>
+        <script>
+            function getWord() {
+                return {
+                    word: null,
+                    async init() {
+                        const resp = await fetch('http://wotd.hoggs.fyi/words/wotd');
+                        this.word = await resp.json();
+                        console.log(this.word);
+                        return this.word;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
