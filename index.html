@@ -48,7 +48,7 @@
                 return {
                     word: null,
                     async init() {
-                        const resp = await fetch('https://wotd.hoggs.fyi/words/wotd/');
+                        const resp = await fetch('https://api.wotd.today/words/wotd/');
                         this.word = await resp.json();
                         console.log(this.word);
                         return this.word;
