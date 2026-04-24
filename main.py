@@ -42,10 +42,9 @@ app.add_middleware(
 @app.middleware("http")
 async def add_pna_header(request: Request, call_next):
     if request.method == "OPTIONS":
-        return Response(headers={
-            "Access-Control-Allow-Private-Network": "true",
-            "Access-Control-Allow-Origin": "https://kieranhogg.github.io",
-        })
+        response = await call_next(request)
+        response.headers["Access-Control-Allow-Private-Network"] = "true"
+        return response
     response = await call_next(request)
     response.headers["Access-Control-Allow-Private-Network"] = "true"
     return response
