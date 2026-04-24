@@ -6,7 +6,7 @@ import logging
 import random
 from typing import Annotated, Literal, Optional
 
-from fastapi import APIRouter, FastAPI, HTTPException, Query
+from fastapi import APIRouter, FastAPI, HTTPException, Query, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
@@ -39,6 +39,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def add_pna_header(request: Request, call_next):
+    if request.method == "OPTIONS":
+        return Response(headers={
+            "Access-Control-Allow-Private-Network": "true",
+            "Access-Control-Allow-Origin": "https://kieranhogg.github.io",
+        })
+    response = await call_next(request)
+    response.headers["Access-Control-Allow-Private-Network"] = "true"
+    return response
 
 class Word(BaseModel):
     word: str
