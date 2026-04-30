@@ -22,14 +22,19 @@ WORDS_PATH = BASE_DIR / "data"
 
 
 app = FastAPI()
-router = APIRouter(prefix="/api")
 
 class Category(Enum):
-    easy = "easy"
-    medium = "medium"
-    hard = "hard"
-    complex = "complex"
+    EASY = "easy"
+    MEDIUM = "medium"
+    HARD = "hard"
+    COMPLEX= "complex"
 
+CATEGORY_LEVELS = {
+    Category.EASY: 1,
+    Category.MEDIUM: 2,
+    Category.HARD: 3,
+    Category.COMPLEX: 4,
+}
 
 app.add_middleware(
     CORSMiddleware,
@@ -53,7 +58,7 @@ class Word(BaseModel):
     word: str
     definition: str
     order: int
-    level: Category = Category.easy
+    level: int
 
 @lru_cache(maxsize=1)
 def load_all_words_from_category(level: Category) -> list:
@@ -62,7 +67,7 @@ def load_all_words_from_category(level: Category) -> list:
         return json.load(f)["words"]
     
 @lru_cache(maxsize=1)
-def load_word_from_category(order: int, level: Category | None = None) -> list:
+def load_word_from_category(order: int, level: Category) -> list:
     if not level:
         level = random.choice(list(Category))
     level_filename = f"{level.value}.json"
@@ -70,8 +75,8 @@ def load_word_from_category(order: int, level: Category | None = None) -> list:
         full_file = json.load(f)["words"]
     line = next(word for word in full_file if word.get("order") == order)
 
-@router.get("/words/wotd/")
-def get_word(level: Annotated[Category | None, Query()] = None):
+@app.get("/")
+def word_of_the_day(level: Category = Category.MEDIUM):
     day_of_year = dt.now().timetuple().tm_yday
 
     if not level:
@@ -85,22 +90,13 @@ def get_word(level: Annotated[Category | None, Query()] = None):
     return word
 
 
-@router.get("/words/")
+@app.get("/words/")
 def words():
     return load_all_words_from_category()
 
-@router.get("/words/random")
+@app.get("/words/random")
 def random_word():
     return random.choice(load_all_words_from_category())
-
-@router.get("/")
-def home():
-    response = RedirectResponse(url='/docs')
-    return response 
-
-
-
-app.include_router(router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
