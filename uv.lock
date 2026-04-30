@@ -991,6 +991,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "click" },
     { name = "pytest" },
 ]
 
@@ -998,4 +999,7 @@ dev = [
 requires-dist = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.136.0" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=9.0.3" }]
+dev = [
+    { name = "click", specifier = ">=8.3.1" },
+    { name = "pytest", specifier = ">=9.0.3" },
+]
