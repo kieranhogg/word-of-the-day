@@ -33,6 +33,16 @@
             <div class="flex-1 py-2 px-4 hover:bg-amber-200 hover:rounded-md hover:shadow-md">Hard</div>
             <div class="flex-1 py-2 px-4 hover:bg-amber-200 hover:rounded-md hover:shadow-md">Complex</div>
         </div>
+       <div id="tabs-container" class="relative flex mb-5 p-1 bg-amber-200 rounded-xl z-0">
+            <div id="slide-bg" class="absolute top-1 bottom-1 left-0 bg-white border-2 border-gray-100 rounded-xl shadow-md transition-all duration-300 ease-out -z-10"></div>
+
+            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Easy</div>
+            
+            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-900 font-medium" data-active="true">Medium</div>
+            
+            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Hard</div>
+            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Complex</div>
+        </div>
         <div x-show="show === 'wotd'" x-data="getWord()">
             <template x-if="word">
                 <div
@@ -96,6 +106,27 @@
                     }
                     }
                 }
+                const container = document.getElementById('tabs-container');
+                const slideBg = document.getElementById('slide-bg');
+                const items = document.querySelectorAll('.nav-item');
+
+                function moveSlider(element) {
+                    slideBg.style.width = `${element.offsetWidth}px`;
+                    slideBg.style.transform = `translateX(${element.offsetLeft}px)`;
+                }
+
+                const activeItem = document.querySelector('[data-active="true"]') || items[0];
+                moveSlider(activeItem);
+
+                items.forEach(item => {
+                    item.addEventListener('mouseenter', (e) => {
+                        moveSlider(e.target);
+                    });
+                });
+
+                container.addEventListener('mouseleave', () => {
+                    moveSlider(activeItem);
+                });
         </script>
         <div x-show="show==='wotd'" class="m-8">
             <img @click="show = 'instructions'" class="mx-auto text-center" src="images/siri-button.png" width="10%"/>
