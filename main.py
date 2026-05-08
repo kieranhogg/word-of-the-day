@@ -35,6 +35,7 @@ CATEGORY_LEVELS = {
     Category.HARD: 3,
     Category.COMPLEX: 4,
 }
+WORD_FILE = Path(WORDS_PATH / "wordlist.json")
 
 app.add_middleware(
     CORSMiddleware,
@@ -60,11 +61,14 @@ class Word(BaseModel):
     order: int
     level: int
 
+
 @lru_cache(maxsize=1)
-def load_all_words_from_category(level: Category) -> list:
-    level_filename = f"{level.value}.json"
-    with open(WORDS_PATH / level_filename, "r") as f:
-        return json.load(f)["words"]
+def load_words(level: Category | None = None) -> list:
+    with open(WORD_FILE, "r") as f:
+        words = json.load(f)["words"]
+        if level:
+            return [word for word in words if word["level"] == CATEGORY_LEVELS[level]]
+        return words
     
 @lru_cache(maxsize=1)
 def load_word_from_category(order: int, level: Category) -> list:
@@ -75,15 +79,16 @@ def load_word_from_category(order: int, level: Category) -> list:
         full_file = json.load(f)["words"]
     line = next(word for word in full_file if word.get("order") == order)
 
-@app.get("/")
+@app.get("/{level}")
 def word_of_the_day(level: Category = Category.MEDIUM):
     day_of_year = dt.now().timetuple().tm_yday
-
     if not level:
         level = random.choice(list(Category))
-    all_things = load_all_words_from_category(level=level)
+    all_things = load_words(level=level)
+    if len(all_things) < day_of_year:
+        day_of_year -= len(all_things)
     word = Word(**all_things[day_of_year])
-    
+
     if not word:
         raise HTTPException(status_code=404, detail="Word not found")
     
@@ -92,11 +97,11 @@ def word_of_the_day(level: Category = Category.MEDIUM):
 
 @app.get("/words/")
 def words():
-    return load_all_words_from_category()
+    return load_words()
 
 @app.get("/words/random")
 def random_word():
-    return random.choice(load_all_words_from_category())
+    return random.choice(load_words())
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
