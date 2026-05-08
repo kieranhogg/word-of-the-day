@@ -28,12 +28,14 @@ def list_files():
     view_words(categories[word_file - 1])
 
 def view_words(word_file):
-    contents = json.loads(open(Path("data") / f"{word_file}.json").read())
-    words = contents.get("words")
-    random.shuffle(words)
+    file_path = Path("data") / f"{word_file}.json"
+    with open(file_path) as file_contents:
+        words_json = json.loads(file_contents.read())
+    words = words_json.get("words")
+    # random.shuffle(words)
     toggle_ids = []
     for i, word in enumerate(words):
-        click.echo(f"{i + 1}: {word}")
+        click.echo(f"{i + 1}: {word["word"]} - {word["definition"]}")
         if i % 10 == 9:
             toggle = input()
             if toggle == "-1":
@@ -41,7 +43,12 @@ def view_words(word_file):
             while len(toggle) > 0:
                  toggle_ids.append(toggle)
                  toggle = input()
-    print(toggle_ids)
+    for id in toggle_ids:
+        words[int(id) -1]["level"] -= 1
+        print(words[int(id)])
+    print(words[0:9])
+    with open(file_path, "w") as output_file:
+        output_file.write(json.dumps({"words": words}, indent=2))
 
 if __name__ == '__main__':
     list_files()
