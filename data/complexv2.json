@@ -40,7 +40,7 @@
       "definition": "huge river of ice that moves slowly",
       "category": "Earth & Geography",
       "order": 6,
-      "level": 3
+      "level": 4
     },
     {
       "word": "aurora",
@@ -82,7 +82,7 @@
       "definition": "colors that help animals hide",
       "category": "Animals & Nature",
       "order": 12,
-      "level": 3
+      "level": 4
     },
     {
       "word": "nocturnal",
@@ -96,7 +96,7 @@
       "definition": "imaginary line around Earth's middle",
       "category": "Earth & Geography",
       "order": 14,
-      "level": 3
+      "level": 4
     },
     {
       "word": "hemisphere",
@@ -145,7 +145,7 @@
       "definition": "the layers of gas surrounding a planet",
       "category": "Space & Science",
       "order": 21,
-      "level": 3
+      "level": 4
     },
     {
       "word": "supernova",
@@ -488,7 +488,7 @@
       "definition": "a system of millions of stars and gas",
       "category": "Space & Science",
       "order": 70,
-      "level": 3
+      "level": 4
     },
     {
       "word": "orbit",
@@ -1041,14 +1041,14 @@
       "definition": "a body of water or air moving in a definite direction",
       "category": "Earth & Geography",
       "order": 149,
-      "level": 3
+      "level": 4
     },
     {
       "word": "tide",
       "definition": "the alternate rising and falling of the sea",
       "category": "Earth & Geography",
       "order": 150,
-      "level": 3
+      "level": 4
     },
     {
       "word": "upwelling",
