@@ -1,8 +1,9 @@
 # Use a Python image with uv pre-installed
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
-RUN groupadd --system --gid 999 nonroot \
-    && useradd --system --gid 999 --uid 999 nonroot
 WORKDIR /app
+RUN groupadd --system --gid 999 nonroot \
+    && useradd --system --gid 999 --uid 999 nonroot \
+    && chown nonroot:nonroot /app
 ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
 ENV UV_NO_DEV=1
