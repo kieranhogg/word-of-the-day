@@ -15,7 +15,9 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --locked --no-install-project
 COPY --chown=nonroot:nonroot . /app
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --locked
+    uv sync --locked \
+    && mkdir -p /app/.cache/uv \
+    && chown -R nonroot:nonroot /app/.cache
 ENV PATH="/app/.venv/bin:$PATH"
 ENTRYPOINT []
 USER nonroot
