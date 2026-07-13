@@ -6,3 +6,5 @@ ansible
 terraform
 *_cache
 .github
+.env
+*.tfvars
