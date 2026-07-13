@@ -1,8 +1,12 @@
 services:
   web:
-    # Build the image from the Dockerfile in the current directory
-    build: .
-    
-    # Expose port 8080 internally (Coolify will handle the external mapping)
+    build: .    
     expose:
       - "8080"
+  dozzle:
+    container_name: dozzle
+    image: amir20/dozzle:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 8888:8080
