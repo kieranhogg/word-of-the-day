@@ -23,7 +23,7 @@ WORDS_PATH = BASE_DIR / "data"
 
 
 app = FastAPI()
-app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+# app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 
 class Category(Enum):
