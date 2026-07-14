@@ -14,7 +14,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --locked --no-install-project
-COPY --chown=nonroot:nonroot api/ .
+COPY --chown=nonroot:nonroot . .
 COPY --chown=nonroot:nonroot data/ ./data
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --locked \
