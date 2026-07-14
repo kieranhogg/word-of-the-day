@@ -27,21 +27,15 @@
         </div>
         <div class="flex-grow flex flex-col items-center justify-center w-full" x-data="formatDateWithOrdinal()">
         <p class="text-center pt-8 pb-3 text-lg text-amber-400 tracking-wide uppercase" x-text="date"></p>
-        <div x-show="toggles" class="flex mb-5 p-2">
-            <div class="flex-1 py-2 px-4 hover:bg-amber-200 hover:rounded-md hover:shadow-md">Easy</div>
-            <div class="flex-1 py-2 px-4 bg-amber-200 border-2 border-amber-500 rounded-md shadow-md">Medium</div>
-            <div class="flex-1 py-2 px-4 hover:bg-amber-200 hover:rounded-md hover:shadow-md">Hard</div>
-            <div class="flex-1 py-2 px-4 hover:bg-amber-200 hover:rounded-md hover:shadow-md">Complex</div>
-        </div>
        <div id="tabs-container" class="relative flex mb-5 p-1 bg-amber-200 rounded-xl z-0">
             <div id="slide-bg" class="absolute top-1 bottom-1 left-0 bg-white border-2 border-gray-100 rounded-xl shadow-md transition-all duration-300 ease-out -z-10"></div>
 
-            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Easy</div>
+            <div data-category="easy" class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Easy</div>
             
-            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-900 font-medium" data-active="true">Medium</div>
+            <div data-category="medium" class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-900 font-medium" data-active="true">Medium</div>
             
-            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Hard</div>
-            <div class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Complex</div>
+            <div data-category="hard"  class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Hard</div>
+            <div data-category="complex" class="nav-item flex-1 py-2 px-4 text-center cursor-pointer transition-colors duration-200 text-gray-700">Complex</div>
         </div>
         <div x-show="show === 'wotd'" x-data="getWord()">
             <template x-if="word">
@@ -65,14 +59,25 @@
         </div>
         <script>
             function getWord() {
-                return {
-                    word: null,
-                    async init() {
-                        const resp = await fetch('/api/medium');
-                        this.word = await resp.json();
-                        return this.word;
+                    return {
+                        word: null,
+                        async init() {
+                            await this.fetchWord();
+                            this.$watch('$store.category', () => this.fetchWord());
+                        },
+                        async fetchWord() {
+                            const resp = await fetch(`/api/${this.$store.category}`);
+                            this.word = await resp.json();
+                        }
                     }
                 }
+            function changeCategory(element) {
+                if (!element.dataset.category) return;
+                items.forEach(item => item.removeAttribute('data-active'));
+                element.setAttribute('data-active', 'true');
+                moveSlider(element);
+                activeItem = element;
+                Alpine.store('category', element.dataset.category);
             }
             function formatDateWithOrdinal() {
                     return {
@@ -115,17 +120,24 @@
                     slideBg.style.transform = `translateX(${element.offsetLeft}px)`;
                 }
 
-                const activeItem = document.querySelector('[data-active="true"]') || items[0];
+                let activeItem = document.querySelector('[data-active="true"]') || items[0];
                 moveSlider(activeItem);
 
                 items.forEach(item => {
                     item.addEventListener('mouseenter', (e) => {
                         moveSlider(e.target);
                     });
+                    item.addEventListener('click', (e) => {
+                        changeCategory(e.target);
+                    });
                 });
 
                 container.addEventListener('mouseleave', () => {
                     moveSlider(activeItem);
+                });
+
+                document.addEventListener('alpine:init', () => {
+                    Alpine.store('category', 'medium');
                 });
         </script>
         <div x-show="show==='wotd'" class="m-8">
