@@ -1,0 +1,12 @@
+staging.wotd.today {
+    tls internal
+    
+    handle_path /api/* {
+        reverse_proxy localhost:8000
+    }
+
+    handle {
+        root * /var/www/frontend
+        file_server
+    }
+}
