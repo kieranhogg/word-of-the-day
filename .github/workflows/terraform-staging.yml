@@ -17,7 +17,7 @@ permissions:
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on: gh-runner
+    runs-on: self-hosted
     strategy:
      matrix:
        environment: [staging]
