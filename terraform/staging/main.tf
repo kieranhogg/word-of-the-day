@@ -15,7 +15,7 @@ terraform {
 }
 provider "proxmox" {
   pm_api_url          = "https://10.0.0.244:8006/api2/json"
-  pm_api_token_id     = "kieran@pve!ansible2"
+  pm_api_token_id     = var.proxmox_id
   pm_api_token_secret = var.proxmox_token
   pm_tls_insecure     = true
 }
