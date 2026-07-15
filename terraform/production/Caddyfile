@@ -1,0 +1,13 @@
+{
+    email kieran.hogg@gmail.com
+}
+wotd.today, prod.wotd.today {
+   handle_path /api/* {
+        reverse_proxy localhost:8000
+    }
+
+    handle {
+        root * /var/www/frontend
+        file_server
+    }
+}
