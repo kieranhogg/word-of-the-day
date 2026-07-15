@@ -40,8 +40,7 @@ jobs:
         {
           "proxmox_token_id": "${{ secrets.PROXMOX_TOKEN_ID }}",
           "proxmox_token_secret": "${{ secrets.PROXMOX_TOKEN_SECRET }}",
-          "ssh_public_key": "${{ vars.SSH_PUBLIC_KEY }}",
-
+          "ssh_public_key": "${{ vars.SSH_PUBLIC_KEY }}"
         }
         EOF
 
