@@ -34,8 +34,9 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Generator json vars file
+      working-directory: terraform/${{ matrix.environment }}
       run: |
-        cat <<EOF > terraform/${{ matrix.environment }}/secrets.auto.tfvars.json
+        cat <<EOF > secrets.auto.tfvars.json
         {
           "proxmox_token_id": "${{ secrets.PROXMOX_TOKEN_ID }}",
           "proxmox_token_secret": "${{ secrets.PROXMOX_TOKEN_SECRET }}",
