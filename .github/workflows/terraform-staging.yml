@@ -56,6 +56,6 @@ jobs:
       run: terraform apply -auto-approve -input=false
       env:
         TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
-        TF_VAR_proxmox_token_id: ${{ secrets.PROXMOX_TOKEN_ID }}
-        TF_VAR_proxmox_token_secret: ${{ secrets.PROXMOX_TOKEN_SECRET }}
-        TF_VAR_ssh_public_key: ${{ vars.SSH_PUBLIC_KEY }}
+        TF_VAR_proxmox_token_id: '"${{ secrets.PROXMOX_TOKEN_ID }}"'
+        TF_VAR_proxmox_token_secret: '"${{ secrets.PROXMOX_TOKEN_SECRET }}"'
+        TF_VAR_ssh_public_key: '"${{ vars.SSH_PUBLIC_KEY }}"'
