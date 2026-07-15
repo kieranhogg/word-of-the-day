@@ -48,6 +48,9 @@ jobs:
       run: terraform plan -input=false
       env:
         TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
+        TF_VAR_proxmox_token_id: ${{ secrets.PROXMOX_TOKEN_ID }}
+        TF_VAR_proxmox_token_secret: ${{ secrets.PROXMOX_TOKEN_SECRET }}
+        TF_VAR_ssh_public_key: ${{ vars.SSH_PUBLIC_KEY }}
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
