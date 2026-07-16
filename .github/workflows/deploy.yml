@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy-staging:
-    runs-on: [self-hosted, staging]
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
 
