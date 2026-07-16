@@ -1,0 +1,45 @@
+### Deploys first to staging, then production via ansible
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-staging:
+    runs-on: [self-hosted, staging]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Ansible
+        run: pip install ansible
+
+      - name: Run playbook
+        working-directory: ansible
+
+        run: ansible-playbook -i staging.ini deploy.yml
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
+
+  deploy-prod:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Ansible
+        run: pip install ansible
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PROD_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' inventory/prod.ini)
+          ssh-keyscan -H "$PROD_HOST" >> ~/.ssh/known_hosts
+
+      - name: Run playbook
+        run: ansible-playbook -i production.ini deploy.yml
+        env:
+            ANSIBLE_HOST_KEY_CHECKING: "False"
