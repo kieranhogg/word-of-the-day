@@ -1,0 +1,68 @@
+---
+- name: Deploy Frontend and Web Server
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Caddy dependencies
+      apt:
+        name: ["debian-keyring", "debian-archive-keyring", "apt-transport-https"]
+        state: present
+        update_cache: yes
+
+    - name: Download Caddy GPG Key
+      get_url:
+        url: https://dl.cloudsmith.io/public/caddy/stable/gpg.key
+        dest: /tmp/caddy-stable.key
+        mode: '0644'
+
+    - name: Process key 
+      command:
+        cmd: gpg --dearmour -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg /tmp/caddy-stable.key
+        creates: /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+
+    - name: Set permissions on key 
+      file:
+        path: /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+        mode: '0644'
+        state: 'file'
+
+    - name: Download Caddy apt repo 
+      get_url:
+        url: https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt
+        dest: /etc/apt/sources.list.d/caddy-stable.list
+        mode: '0644'
+
+    - name: Install Caddy Engine
+      apt:
+        name: caddy
+        state: present
+        update_cache: yes
+
+    - name: Ensure web root directory exists
+      file:
+        path: /var/www/frontend
+        state: directory
+        owner: caddy
+        group: caddy
+        mode: '0755'
+
+    - name: Copy frontend static files to server
+      copy:
+        src: ../../frontend/
+        dest: /var/www/frontend/
+        owner: caddy
+        group: caddy
+        mode: '0644'
+
+    - name: Copy Caddyfile configuration
+      copy:
+        src: "{{ env_caddyfile }}"
+        dest: /etc/caddy/Caddyfile
+      notify: Reload Caddy
+
+  handlers:
+    - name: Reload Caddy
+      service:
+        name: caddy
+        state: reloaded

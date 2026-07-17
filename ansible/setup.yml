@@ -1,0 +1,5 @@
+# Set up fresh server
+
+- import_playbook: playbooks/install-base.yml
+- import_playbook: playbooks/install-docker.yml
+- import_playbook: playbooks/install-webserver.yml
