@@ -93,8 +93,8 @@ jobs:
       working-directory: terraform/staging
       run: |
         terraform init
-        echo "[staging]" > ../../ansible/staging.ini
-        terraform output -raw staging_ip >> ../../ansible/staging.ini
+        echo "[staging]" > ${{ github.workspace }}/ansible/staging.ini
+        echo "$(terraform output -raw staging_ip) ansible_user=root" >> ${{ github.workspace }}/ansible/staging.ini
       env:
         TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
 
