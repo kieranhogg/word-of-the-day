@@ -92,10 +92,6 @@ jobs:
     - name: Fetch IP from Terraform
       working-directory: terraform/staging
       run: |
-        pwd
-        ls
-        ls ..
-        ls ../..
         terraform init
         echo "[staging]" > ../../ansible/staging.ini
         terraform output -raw staging_ip >> ../../ansible/staging.ini
