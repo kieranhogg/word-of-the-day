@@ -85,6 +85,10 @@ jobs:
   refresh_server:
     runs-on: self-hosted
     steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Fetch IP from Terraform
       working-directory: terraform/staging
       run: |
