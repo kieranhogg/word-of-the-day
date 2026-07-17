@@ -16,7 +16,7 @@ env:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
@@ -82,22 +82,23 @@ jobs:
         # against the sigstore community Fulcio instance.
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
 
+  refresh_server:
+    runs-on: self-hosted
+    steps:
+    - name: Fetch IP from Terraform
+      working-directory: terraform/staging
+      run: |
+        terraform init
+        echo "[staging]" > ../../ansible/staging.ini
+        terraform output -raw staging_ip >> ../../ansible/staging.ini
+      env:
+        TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
 
-      - name: Fetch IP from Terraform
-        working-directory: terraform/staging
-        run: |
-            terraform init
-            echo "[staging]" > ../../ansible/staging.ini
-            terraform output -raw staging_ip >> ../../ansible/staging.ini
-        env:
-            TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
-
-        # --- Step 2: Run Ansible normally ---
-      - name: Run Ansible Deploy
-        working-directory: ansible
-        run: |
-            eval $(ssh-agent -s)
-            echo "${{ secrets.PROD_SSH_KEY }}" | tr -d '\r' | ssh-add -
-            ansible-playbook -i staging.ini playbooks/pull-image.yml
-        env:
-            ANSIBLE_HOST_KEY_CHECKING: "False"
+    - name: Run Ansible Deploy
+      working-directory: ansible
+      run: |
+        eval $(ssh-agent -s)
+        echo "${{ secrets.PROD_SSH_KEY }}" | tr -d '\r' | ssh-add -
+        ansible-playbook -i staging.ini playbooks/pull-image.yml
+    env:
+        ANSIBLE_HOST_KEY_CHECKING: "False"
