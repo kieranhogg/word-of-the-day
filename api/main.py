@@ -1,15 +1,12 @@
-from fastapi.staticfiles import StaticFiles
 from enum import Enum
 import json
 from datetime import datetime as dt
 from functools import lru_cache
 import logging
 import random
-from typing import Annotated, Literal, Optional
 
-from fastapi import APIRouter, FastAPI, HTTPException, Query, Request, Response
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 from pathlib import Path
@@ -26,19 +23,20 @@ app = FastAPI()
 # app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 
-class Category(Enum):
+class Level(Enum):
     EASY = "easy"
     MEDIUM = "medium"
     HARD = "hard"
     COMPLEX = "complex"
 
 
-CATEGORY_LEVELS = {
-    Category.EASY: 1,
-    Category.MEDIUM: 2,
-    Category.HARD: 3,
-    Category.COMPLEX: 4,
+LEVELS = {
+    Level.EASY: 1,
+    Level.MEDIUM: 2,
+    Level.HARD: 3,
+    Level.COMPLEX: 4,
 }
+
 WORD_FILE = Path(WORDS_PATH / "wordlist.json")
 
 app.add_middleware(
@@ -69,29 +67,46 @@ class Word(BaseModel):
 
 
 @lru_cache(maxsize=1)
-def load_words(level: Category | None = None) -> list:
+def load_words(level: Level | None = None) -> list:
     with open(WORD_FILE, "r") as f:
         words = json.load(f)["words"]
         if level:
-            return [word for word in words if word["level"] == CATEGORY_LEVELS[level]]
+            return [word for word in words if word.get("level") == LEVELS[level]]
         return words
 
 
 @lru_cache(maxsize=1)
-def load_word_from_category(order: int, level: Category) -> list:
+def load_word_from_level(order: int, level: Level) -> list:
     if not level:
-        level = random.choice(list(Category))
+        level = random.choice(list(level))
     level_filename = f"{level.value}.json"
     with open(WORDS_PATH / level_filename, "r") as f:
         full_file = json.load(f)["words"]
     line = next(word for word in full_file if word.get("order") == order)
 
 
+@app.get("/")
+def random_word_of_the_day():
+    day_of_year = dt.now().timetuple().tm_yday
+    random_level_num = day_of_year % len(list(Level))
+    # Get the level dict, turn the items into a list to select a random index
+    random_level, value = list(LEVELS.items())[random_level_num]
+    all_things = load_words(level=random_level)
+    if len(all_things) < day_of_year:
+        day_of_year -= len(all_things)
+    word = Word(**all_things[day_of_year])
+
+    if not word:
+        raise HTTPException(status_code=404, detail="No words!")
+
+    return word
+
+
 @app.get("/{level}")
-def word_of_the_day(level: Category = Category.MEDIUM):
+def word_of_the_day(level: Level = Level.MEDIUM):
     day_of_year = dt.now().timetuple().tm_yday
     if not level:
-        level = random.choice(list(Category))
+        level = random.choice(list(level))
     all_things = load_words(level=level)
     if len(all_things) < day_of_year:
         day_of_year -= len(all_things)
