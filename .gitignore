@@ -10,3 +10,12 @@ wheels/
 .venv
 
 .DS_Store
+
+# Secrets
+.env
+*.env
+
+# TF & Ansible
+.terraform*
+*.tfstate*
+secrets.auto.tfvars
