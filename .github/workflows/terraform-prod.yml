@@ -7,9 +7,13 @@
 name: 'Terraform Prod'
 
 on:
+  # workflow_run:
+  #   workflows: ["Terraform Staging"]
+  #   branches: [main]
+  #   types: 
+  #     - completed
   push:
-    branches: [ "main" ]
-  pull_request:
+    # branches: [ "main" ]
 
 permissions:
   contents: read

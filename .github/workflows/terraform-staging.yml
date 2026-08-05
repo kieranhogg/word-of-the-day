@@ -7,9 +7,13 @@
 name: 'Terraform Staging'
 
 on:
+  workflow_run:
+    workflows: ["Docker Publish"]
+    branches: [main]
+    types: 
+      - completed
   push:
     branches: [ "main" ]
-  pull_request:
 
 permissions:
   contents: read
