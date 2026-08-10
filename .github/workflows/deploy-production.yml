@@ -1,0 +1,57 @@
+name: Deploy to Production
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    strategy:
+     matrix:
+       environment: [production]
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: terraform/${{ matrix.environment }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v4
+      with:
+        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+        terraform_wrapper: false
+
+    - name: Terraform Init
+      run: terraform init
+
+    - name: Terraform Plan
+      run: terraform plan -input=false
+
+    - name: Terraform Apply
+      run: terraform apply -auto-approve -input=false
+
+
+    - name: Install Ansible
+      run: pip install ansible
+
+    - name: Set up SSH key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.PROD_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+
+        PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' inventory/prod.ini)
+        ssh-keyscan -H "$PROD_HOST" >> ~/.ssh/known_hosts
+
+    - name: Run playbook
+      run: ansible-playbook -i production.ini deploy.yml
+      env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
