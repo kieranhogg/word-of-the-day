@@ -1,0 +1,33 @@
+---
+- name: Deploy Frontend and Web Server
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Ensure web root directory exists
+      file:
+        path: /var/www/frontend
+        state: directory
+        owner: caddy
+        group: caddy
+        mode: '0755'
+
+    - name: Copy frontend static files to server
+      copy:
+        src: ../../frontend/
+        dest: /var/www/frontend/
+        owner: caddy
+        group: caddy
+        mode: '0644'
+
+    - name: Copy Caddyfile configuration
+      copy:
+        src: "{{ env_caddyfile }}"
+        dest: /etc/caddy/Caddyfile
+      notify: Reload Caddy
+
+  handlers:
+    - name: Reload Caddy
+      service:
+        name: caddy
+        state: reloaded
