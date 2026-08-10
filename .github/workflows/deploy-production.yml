@@ -47,7 +47,9 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.PROD_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-
+        pwd
+        ls
+        ls ..
         PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' ${{ matrix.environment }}.ini)
         ssh-keyscan -H "$PROD_HOST" >> ~/.ssh/known_hosts
 
