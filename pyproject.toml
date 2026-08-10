@@ -14,4 +14,11 @@ dev = [
     "click>=8.4.2",
     "pre-commit>=4.6.0",
     "pytest>=9.0.3",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["api"]
+addopts = "--cov=api --cov-report term"
+
