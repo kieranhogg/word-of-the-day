@@ -34,14 +34,12 @@ output "production_ip" {
   value       = hcloud_server.production_node.ipv4_address
 }
 
-# Inventory creation
-resource "local_file" "ansible_production_inventory" {
-  filename = "${path.module}/../../ansible/production.ini"
-  content  = <<EOT
-[production]
-${hcloud_server.production_node.ipv4_address} ansible_user=root
+output "production_inventory" {
+  value = <<-EOT
+    [production]
+    ${hcloud_server.production_node.ipv4_address} ansible_user=root
 
-[production:vars]
-env_caddyfile=../../terraform/production/Caddyfile
-EOT
+    [production:vars]
+    env_caddyfile=../../terraform/production/Caddyfile
+  EOT
 }
