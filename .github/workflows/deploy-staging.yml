@@ -130,20 +130,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Fetch IP from Terraform
-      working-directory: terraform/staging
-      run: |
-        terraform init
-        echo "[staging]" > ${{ github.workspace }}/ansible/staging.ini
-        echo "$(terraform output -raw staging_ip) ansible_user=root" >> ${{ github.workspace }}/ansible/staging.ini
-      env:
-        TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
 
     - name: Run Ansible Deploy
       working-directory: ansible
       run: |
         eval $(ssh-agent -s)
         echo "${{ secrets.PROD_SSH_KEY }}" | tr -d '\r' | ssh-add -
-        ansible-playbook -i staging.ini playbooks/pull-image.yml
+        ansible-playbook -i staging.ini deploy.yml
     env:
         ANSIBLE_HOST_KEY_CHECKING: "False"
