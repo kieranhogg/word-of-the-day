@@ -27,11 +27,11 @@
         mode: '0644'
         state: 'file'
 
-    - name: Download Caddy apt repo 
-      get_url:
-        url: https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt
-        dest: /etc/apt/sources.list.d/caddy-stable.list
-        mode: '0644'
+    - name: Add Caddy apt repo 
+      ansible.builtin.apt_repository:
+        repo: "deb [signed-by=/usr/share/keyrings/caddy-stable-archive-keyring.gpg] https://dl.cloudsmith.io/public/caddy/stable/deb/debian any-version main"
+        state: present 
+        filename: caddy-stable
 
     - name: Install Caddy Engine
       apt:
