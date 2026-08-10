@@ -136,6 +136,6 @@ jobs:
       run: |
         eval $(ssh-agent -s)
         echo "${{ secrets.PROD_SSH_KEY }}" | tr -d '\r' | ssh-add -
-        ansible-playbook -i staging.ini deploy.yml
+        ansible-playbook -i staging.ini deploy-staging.yml
     env:
         ANSIBLE_HOST_KEY_CHECKING: "False"
