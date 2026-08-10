@@ -38,7 +38,20 @@ jobs:
     - name: Terraform Apply
       run: terraform apply -auto-approve -input=false
 
+  ansible:
+    name: Ansible
+    runs-on: ubuntu-latest
 
+    strategy:
+     matrix:
+       environment: [production]
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ansible/
+
+    steps:
     - name: Install Ansible
       run: pip install ansible
 
@@ -48,10 +61,10 @@ jobs:
         echo "${{ secrets.PROD_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
 
-        PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' inventory/prod.ini)
+        PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' ${{ matrix.environment }}.ini)
         ssh-keyscan -H "$PROD_HOST" >> ~/.ssh/known_hosts
 
     - name: Run playbook
-      run: ansible-playbook -i production.ini deploy.yml
+      run: ansible-playbook -i ${{ matrix.environment }}.ini deploy.yml
       env:
           ANSIBLE_HOST_KEY_CHECKING: "False"
