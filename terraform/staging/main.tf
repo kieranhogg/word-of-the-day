@@ -72,19 +72,3 @@ resource "proxmox_vm_qemu" "staging_node" {
   ipconfig0        = "ip=10.0.0.44/24,gw=10.0.0.160"
   automatic_reboot = true
 }
-
-output "vm_ip" {
-  value = proxmox_vm_qemu.staging_node.default_ipv4_address
-}
-
-# Inventory creation
-resource "local_file" "ansible_staging_inventory" {
-  filename = "${path.module}/../../ansible/staging.ini"
-  content  = <<EOT
-[staging]
-${proxmox_vm_qemu.staging_node.default_ipv4_address} ansible_user=user
-
-[staging:vars]
-env_caddyfile=../../terraform/staging/Caddyfile
-EOT
-}
