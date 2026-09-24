@@ -15,12 +15,6 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file api/Dockerfile --tag my-image-name:$(date +%s)
   publish:
     runs-on: ubuntu-latest
     permissions:
@@ -135,7 +129,7 @@ jobs:
       working-directory: ansible
       run: |
         eval $(ssh-agent -s)
-        echo "${{ secrets.PROD_SSH_KEY }}" | tr -d '\r' | ssh-add -
+        echo "${{ secrets.STAGING_SSH_KEY }}" | tr -d '\r' | ssh-add -
         ansible-playbook -i staging.ini deploy-staging.yml
     env:
         ANSIBLE_HOST_KEY_CHECKING: "False"
