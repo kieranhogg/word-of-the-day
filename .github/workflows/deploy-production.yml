@@ -6,6 +6,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: 'Deploy'
@@ -46,9 +50,11 @@ jobs:
 
     - name: Set up SSH key
       working-directory: ansible/
+      env:
+        PROD_SSH_KEY: ${{ secrets.PROD_SSH_KEY }}
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.PROD_SSH_KEY }}" > ~/.ssh/id_rsa
+        echo "$PROD_SSH_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         PROD_HOST=$(awk '/^\[production\]/{f=1;next}/^\[/{f=0}f && NF{print $1; exit}' ${{ matrix.environment }}.ini)
         ssh-keyscan -H "$PROD_HOST" >> ~/.ssh/known_hosts

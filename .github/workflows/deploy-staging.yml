@@ -10,6 +10,10 @@ on:
       - 'frontend/**'
       - 'pyproject.toml'
       - '.dockerignore'
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
@@ -127,9 +131,11 @@ jobs:
 
     - name: Run Ansible Deploy
       working-directory: ansible
+      env:
+        STAGING_SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
       run: |
         eval $(ssh-agent -s)
-        echo "${{ secrets.STAGING_SSH_KEY }}" | tr -d '\r' | ssh-add -
+        echo "$STAGING_SSH_KEY" | tr -d '\r' | ssh-add -
         ansible-playbook -i staging.ini deploy-staging.yml
     env:
         ANSIBLE_HOST_KEY_CHECKING: "False"
