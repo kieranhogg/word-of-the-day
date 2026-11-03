@@ -10,6 +10,8 @@ on:
       - 'frontend/**'
       - 'pyproject.toml'
       - '.dockerignore'
+      - 'terraform/staging/**'
+      - 'ansible/**'
 concurrency:
   group: deploy-staging
   cancel-in-progress: false
@@ -19,7 +21,13 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
+  test:
+    permissions:
+      contents: read
+    uses: ./.github/workflows/tests.yml
+
   publish:
+    needs: test
     runs-on: ubuntu-latest
     permissions:
       contents: read
