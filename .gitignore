@@ -5,17 +5,26 @@ build/
 dist/
 wheels/
 *.egg-info
+.coverage
 
 # Virtual environments
 .venv
 
 .DS_Store
 
+# Editors and caches
+.idea/
+.mypy_cache/
+.pytest_cache/
+
 # Secrets
 .env
 *.env
 
-# TF & Ansible
-.terraform*
+# Terraform (the .terraform.lock.hcl files stay tracked)
+.terraform/
 *.tfstate*
 secrets.auto.tfvars
+
+# Written by deploy-production.yml
+ansible/production.ini
