@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:python3.15-bookworm-slim
+FROM ghcr.io/astral-sh/uv:python3.15-alpine
 WORKDIR /app
 COPY pyproject.toml uv.lock ./
 RUN groupadd --system --gid 999 nonroot \
