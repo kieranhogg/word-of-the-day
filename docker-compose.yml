@@ -2,9 +2,9 @@ services:
   web:
     build:
       context: .
-      dockerfile: api/Dockerfile`
+      dockerfile: api/Dockerfile
     expose:
-      - "8080"
+      - "8000"
   dozzle:
     container_name: dozzle
     image: amir20/dozzle:latest
