@@ -4,7 +4,7 @@ import pytest
 from fastapi import status
 from fastapi.testclient import TestClient
 
-from api.main import LEVELS, Level, app
+from api.main import LEVELS, Level, _word_for_day, app
 
 EXPECTED_KEYS = ["level", "word", "definition", "category", "order", "image"]
 
@@ -36,7 +36,7 @@ def client():
                 "definition": "giant animal that lived long ago",
                 "category": "Animals & Nature",
                 "order": 1,
-                "level": 2,
+                "level": 3,
             }
         ],
         Level.COMPLEX: [
@@ -85,6 +85,15 @@ def test_get_word_of_the_day_no_level_is_the_same():
         for _ in range(10):
             response = client.get("/")
             assert response.json()["word"] == word
+
+
+@pytest.mark.parametrize("level", list(Level))
+def test_word_for_every_day_of_a_leap_year(level):
+    """No day should index past the end of a word list."""
+    with TestClient(app):
+        words = app.state.words[level]
+        for day in range(1, 367):
+            assert _word_for_day(words, day).level == LEVELS[level]
 
 
 def test_get_word_invalid_level():
