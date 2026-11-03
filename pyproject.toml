@@ -6,7 +6,6 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.141.1",
-    "pytest>=9.0.3",
 ]
 
 [dependency-groups]
@@ -19,5 +18,6 @@ dev = [
 
 [tool.pytest.ini_options]
 pythonpath = ["api"]
+asyncio_default_fixture_loop_scope = "function"
 addopts = "--cov=api --cov-report term"
 
