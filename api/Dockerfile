@@ -1,8 +1,8 @@
 FROM ghcr.io/astral-sh/uv:python3.15-alpine
 WORKDIR /app
 COPY pyproject.toml uv.lock ./
-RUN addgroup -S -g 999 nonroot \
-    && adduser -S -G nonroot -u 999 nonroot \
+RUN addgroup -S nonroot \
+    && adduser -S -G nonroot nonroot \
     && chown nonroot:nonroot /app
 ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
